@@ -1,19 +1,50 @@
-[gd_scene format=3 uid="uid://dpl3o42ejwcha"]
+[gd_scene load_steps=3 format=3 uid="uid://dpl3o42ejwcha"]
+
+[ext_resource type="Texture2D" uid="uid://cjm2xqrths83s" path="res://Artes/corpo1 sprite.png" id="1_mcklx"]
+[ext_resource type="Texture2D" uid="uid://v0msmtmnymmp" path="res://Artes/corpo2 sprite.png" id="2_kygeq"]
 
 [node name="Player" type="Node2D"]
 
-[node name="CompositeSprites" type="Node2D" parent="."]
+[node name="Corpo1" type="Node2D" parent="."]
+scale = Vector2(0.005, 0.005)
 
-[node name="Corpo" type="Sprite2D" parent="CompositeSprites"]
+[node name="Corpo1Sprite" type="Sprite2D" parent="Corpo1"]
+position = Vector2(-63600, 37600)
+scale = Vector2(100, 100)
+texture = ExtResource("1_mcklx")
+hframes = 4
+vframes = 2
+frame = 1
 
-[node name="Pele" type="Sprite2D" parent="CompositeSprites"]
+[node name="Pele" type="Sprite2D" parent="Corpo1"]
 
-[node name="Olho" type="Sprite2D" parent="CompositeSprites"]
+[node name="Olho" type="Sprite2D" parent="Corpo1"]
 
-[node name="Cabelo" type="Sprite2D" parent="CompositeSprites"]
+[node name="Cabelo" type="Sprite2D" parent="Corpo1"]
 
-[node name="Top" type="Sprite2D" parent="CompositeSprites"]
+[node name="Top" type="Sprite2D" parent="Corpo1"]
 
-[node name="Bottom" type="Sprite2D" parent="CompositeSprites"]
+[node name="Bottom" type="Sprite2D" parent="Corpo1"]
 
-[node name="Sapato" type="Sprite2D" parent="CompositeSprites"]
+[node name="Sapato" type="Sprite2D" parent="Corpo1"]
+
+[node name="Corpo2" type="Node2D" parent="."]
+
+[node name="Pele" type="Sprite2D" parent="Corpo2"]
+
+[node name="Olho" type="Sprite2D" parent="Corpo2"]
+
+[node name="Cabelo" type="Sprite2D" parent="Corpo2"]
+
+[node name="Top" type="Sprite2D" parent="Corpo2"]
+
+[node name="Bottom" type="Sprite2D" parent="Corpo2"]
+
+[node name="Sapato" type="Sprite2D" parent="Corpo2"]
+
+[node name="Corpo2Sprite" type="Sprite2D" parent="."]
+position = Vector2(249, 199)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_kygeq")
+hframes = 4
+vframes = 2
