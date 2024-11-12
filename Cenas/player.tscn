@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dpl3o42ejwcha"]
+
+[node name="Player" type="Node2D"]
+
+[node name="CompositeSprites" type="Node2D" parent="."]
+
+[node name="Corpo" type="Sprite2D" parent="CompositeSprites"]
+
+[node name="Pele" type="Sprite2D" parent="CompositeSprites"]
+
+[node name="Olho" type="Sprite2D" parent="CompositeSprites"]
+
+[node name="Cabelo" type="Sprite2D" parent="CompositeSprites"]
+
+[node name="Top" type="Sprite2D" parent="CompositeSprites"]
+
+[node name="Bottom" type="Sprite2D" parent="CompositeSprites"]
+
+[node name="Sapato" type="Sprite2D" parent="CompositeSprites"]
