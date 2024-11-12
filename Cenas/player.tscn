@@ -1,22 +1,22 @@
 [gd_scene load_steps=3 format=3 uid="uid://dpl3o42ejwcha"]
 
-[ext_resource type="Texture2D" uid="uid://cjm2xqrths83s" path="res://Artes/corpo1 sprite.png" id="1_mcklx"]
-[ext_resource type="Texture2D" uid="uid://v0msmtmnymmp" path="res://Artes/corpo2 sprite.png" id="2_kygeq"]
+[ext_resource type="Texture2D" uid="uid://c1umm5qu13ha7" path="res://Artes/sprite corpo1.png" id="1_2wxwp"]
+[ext_resource type="Texture2D" uid="uid://cgxwmfcxxwtov" path="res://Artes/sprite corpo2.png" id="2_870np"]
 
 [node name="Player" type="Node2D"]
 
 [node name="Corpo1" type="Node2D" parent="."]
 scale = Vector2(0.005, 0.005)
 
-[node name="Corpo1Sprite" type="Sprite2D" parent="Corpo1"]
-position = Vector2(-63600, 37600)
-scale = Vector2(100, 100)
-texture = ExtResource("1_mcklx")
+[node name="Pele" type="Sprite2D" parent="Corpo1"]
+scale = Vector2(0.5, 0.5)
+
+[node name="SpriteCorpo1" type="Sprite2D" parent="Corpo1/Pele"]
+position = Vector2(-100800, 13600)
+scale = Vector2(200, 200)
+texture = ExtResource("1_2wxwp")
 hframes = 4
 vframes = 2
-frame = 1
-
-[node name="Pele" type="Sprite2D" parent="Corpo1"]
 
 [node name="Olho" type="Sprite2D" parent="Corpo1"]
 
@@ -42,9 +42,9 @@ frame = 1
 
 [node name="Sapato" type="Sprite2D" parent="Corpo2"]
 
-[node name="Corpo2Sprite" type="Sprite2D" parent="."]
-position = Vector2(249, 199)
+[node name="SpriteCorpo2" type="Sprite2D" parent="."]
+position = Vector2(333, 31)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_kygeq")
+texture = ExtResource("2_870np")
 hframes = 4
 vframes = 2
