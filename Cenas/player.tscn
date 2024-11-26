@@ -27,7 +27,6 @@ scale = Vector2(6.8, 6.8)
 texture = ExtResource("2_gahht")
 hframes = 2
 vframes = 3
-frame = 5
 
 [node name="Cabelo" type="Sprite2D" parent="Corpo1"]
 
@@ -49,6 +48,13 @@ hframes = 4
 vframes = 2
 
 [node name="Olho" type="Sprite2D" parent="Corpo2"]
+
+[node name="SpriteOlho" type="Sprite2D" parent="Corpo2/Olho"]
+position = Vector2(333, -169)
+scale = Vector2(0.034, 0.034)
+texture = ExtResource("2_gahht")
+hframes = 2
+vframes = 3
 
 [node name="Cabelo" type="Sprite2D" parent="Corpo2"]
 
