@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://w5rf1tc1rth8" path="res://Artes/sprite olho.png" id="2_gahht"]
 
 [node name="Player" type="Node2D"]
+visible = false
 
 [node name="Corpo1" type="Node2D" parent="."]
 scale = Vector2(0.005, 0.005)
