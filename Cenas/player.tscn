@@ -1,66 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpl3o42ejwcha"]
+[gd_scene load_steps=3 format=3 uid="uid://dpl3o42ejwcha"]
 
-[ext_resource type="Texture2D" uid="uid://c1umm5qu13ha7" path="res://Artes/sprite corpo1.png" id="1_2wxwp"]
-[ext_resource type="Texture2D" uid="uid://cgxwmfcxxwtov" path="res://Artes/sprite corpo2.png" id="2_870np"]
-[ext_resource type="Texture2D" uid="uid://w5rf1tc1rth8" path="res://Artes/sprite olho.png" id="2_gahht"]
+[ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Cenas/corpo_1.tscn" id="1_cw3fc"]
+[ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Cenas/corpo_2.tscn" id="2_3ie0a"]
 
 [node name="Player" type="Node2D"]
-visible = false
 
-[node name="Corpo1" type="Node2D" parent="."]
-scale = Vector2(0.005, 0.005)
+[node name="Corpo_1" parent="." instance=ExtResource("1_cw3fc")]
 
-[node name="Pele" type="Sprite2D" parent="Corpo1"]
-scale = Vector2(0.5, 0.5)
-
-[node name="SpriteCorpo1" type="Sprite2D" parent="Corpo1/Pele"]
-position = Vector2(-100800, 13600)
-scale = Vector2(200, 200)
-texture = ExtResource("1_2wxwp")
-hframes = 4
-vframes = 2
-
-[node name="Olho" type="Sprite2D" parent="Corpo1"]
-
-[node name="SpriteOlho" type="Sprite2D" parent="Corpo1/Olho"]
-position = Vector2(-50400, -33200)
-scale = Vector2(6.8, 6.8)
-texture = ExtResource("2_gahht")
-hframes = 2
-vframes = 3
-
-[node name="Cabelo" type="Sprite2D" parent="Corpo1"]
-
-[node name="Top" type="Sprite2D" parent="Corpo1"]
-
-[node name="Bottom" type="Sprite2D" parent="Corpo1"]
-
-[node name="Sapato" type="Sprite2D" parent="Corpo1"]
-
-[node name="Corpo2" type="Node2D" parent="."]
-
-[node name="Pele" type="Sprite2D" parent="Corpo2"]
-
-[node name="SpriteCorpo2" type="Sprite2D" parent="Corpo2/Pele"]
-position = Vector2(333, 31)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_870np")
-hframes = 4
-vframes = 2
-
-[node name="Olho" type="Sprite2D" parent="Corpo2"]
-
-[node name="SpriteOlho" type="Sprite2D" parent="Corpo2/Olho"]
-position = Vector2(333, -169)
-scale = Vector2(0.034, 0.034)
-texture = ExtResource("2_gahht")
-hframes = 2
-vframes = 3
-
-[node name="Cabelo" type="Sprite2D" parent="Corpo2"]
-
-[node name="Top" type="Sprite2D" parent="Corpo2"]
-
-[node name="Bottom" type="Sprite2D" parent="Corpo2"]
-
-[node name="Sapato" type="Sprite2D" parent="Corpo2"]
+[node name="Corpo_2" parent="." instance=ExtResource("2_3ie0a")]

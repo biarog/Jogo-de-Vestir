@@ -8,38 +8,44 @@
 [ext_resource type="Texture2D" uid="uid://b5ejp4w228ray" path="res://Artes/130 Sem Título_20241129143553.png" id="6_bvfj5"]
 
 [node name="tela inicio" type="Node2D"]
+position = Vector2(304, 142)
+scale = Vector2(2.08341, 2.08341)
 
 [node name="WhatsAppImage2024-11-29At13_41_02" type="Sprite2D" parent="."]
-position = Vector2(316, 162)
+position = Vector2(314.88, 191.011)
 rotation = -1.5707
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.224967, 0.300006)
 texture = ExtResource("1_0msgk")
 
-[node name="129SemTítulo20241129133831" type="Sprite2D" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-62.8776, -11.0396)
+scale = Vector2(1.22806, 1.22806)
+
+[node name="129SemTítulo20241129133831" type="Sprite2D" parent="Node2D"]
 position = Vector2(315, 172)
 rotation = 1.56573
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_l3vgx")
 
-[node name="129SemTítulo20241129133907" type="Sprite2D" parent="."]
+[node name="129SemTítulo20241129133907" type="Sprite2D" parent="Node2D"]
 position = Vector2(318, 170)
 rotation = -1.62186
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_st01g")
 
-[node name="129SemTítulo20241129133859" type="Sprite2D" parent="."]
+[node name="129SemTítulo20241129133859" type="Sprite2D" parent="Node2D"]
 position = Vector2(318, 173)
 rotation = -1.56778
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_g06vp")
 
-[node name="130SemTítulo20241129143343" type="Sprite2D" parent="."]
+[node name="130SemTítulo20241129143343" type="Sprite2D" parent="Node2D"]
 position = Vector2(517, 240)
 rotation = 0.211112
 scale = Vector2(0.0448568, 0.0448568)
 texture = ExtResource("5_ubf86")
 
-[node name="130SemTítulo20241129143553" type="Sprite2D" parent="."]
+[node name="130SemTítulo20241129143553" type="Sprite2D" parent="Node2D"]
 position = Vector2(121, 195)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("6_bvfj5")
