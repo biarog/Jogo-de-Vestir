@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cullrtmjonhws" path="res://Artes/Aparencia/Corpo2/sprite_top_c2.png" id="3_rerct"]
 [ext_resource type="Texture2D" uid="uid://shryrbpkha0" path="res://Artes/Aparencia/Corpo2/sprite_bottom_c2.png" id="4_5rp4v"]
 [ext_resource type="Texture2D" uid="uid://cks4vvv4gp5as" path="res://Artes/Aparencia/Corpo2/sprite_sapato_c2.png" id="5_wtdm0"]
-[ext_resource type="Texture2D" path="res://Artes/Aparencia/Corpo2/sprite_cabelo_c2.png" id="6_obush"]
+[ext_resource type="Texture2D" uid="uid://dkvj8r1qgcjgr" path="res://Artes/Aparencia/Corpo2/sprite_cabelo_c2.png" id="6_obush"]
 
 [node name="Corpo_2" type="Node2D"]
 position = Vector2(3, 0)
