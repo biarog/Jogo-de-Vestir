@@ -24,4 +24,19 @@ func escolha_menu(nome:String):
 	nodulo.show()
 
 func escolha_cabelo(val:int):
-	pass
+	self.val_cabelo = val
+
+func escolha_olho(val: int):
+	self.val_olho = val
+
+func escolha_pele(val: int):
+	self.val_pele = val
+
+func escolha_top(val: int):
+	self.val_top = val
+
+func escolha_bottom(val: int):
+	self.val_bottom = val
+
+func escolha_sapato(val: int):
+	self.val_sapato = val
