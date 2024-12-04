@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfyw8v2qrrnth"]
 
-[ext_resource type="Script" path="res://Cenas/Fases/fase.gd" id="1_mpbjv"]
-[ext_resource type="PackedScene" uid="uid://d0iy8gvd40fsb" path="res://Cenas/Fases/menu_roupas.tscn" id="2_kafhn"]
-[ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Cenas/corpo_1.tscn" id="3_a4llp"]
-[ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Cenas/corpo_2.tscn" id="4_4xh6d"]
+[ext_resource type="Script" path="res://Fases/scripts/fase.gd" id="1_mpbjv"]
+[ext_resource type="PackedScene" uid="uid://d0iy8gvd40fsb" path="res://Fases/cenas/menu_roupas.tscn" id="2_kafhn"]
+[ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Player/Cenas/corpo_1.tscn" id="3_a4llp"]
+[ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Player/Cenas/corpo_2.tscn" id="4_4xh6d"]
 
 [node name="Fase" type="Node2D"]
 script = ExtResource("1_mpbjv")

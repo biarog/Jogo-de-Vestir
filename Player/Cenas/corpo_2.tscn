@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bdlh576kwk7e6"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_i7tcb"]
+[ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_i7tcb"]
 [ext_resource type="Texture2D" uid="uid://bsswh6vr362vm" path="res://Artes/Aparencia/Corpo2/sprite_corpo_2.png" id="1_m1ykc"]
 [ext_resource type="Texture2D" uid="uid://chq620xclrki5" path="res://Artes/Aparencia/sprite_olhos.png" id="2_musdh"]
 [ext_resource type="Texture2D" uid="uid://cullrtmjonhws" path="res://Artes/Aparencia/Corpo2/sprite_top_c2.png" id="3_rerct"]
@@ -23,7 +23,6 @@ scale = Vector2(0.0865893, 0.0865893)
 texture = ExtResource("2_musdh")
 hframes = 2
 vframes = 3
-frame = 5
 
 [node name="Bottom" type="Sprite2D" parent="."]
 position = Vector2(-2, 17)
@@ -31,7 +30,6 @@ scale = Vector2(0.281, 0.281)
 texture = ExtResource("4_5rp4v")
 hframes = 2
 vframes = 2
-frame = 2
 
 [node name="Top" type="Sprite2D" parent="."]
 position = Vector2(-2, -131)
@@ -39,7 +37,6 @@ scale = Vector2(0.281, 0.281)
 texture = ExtResource("3_rerct")
 hframes = 2
 vframes = 2
-frame = 2
 
 [node name="Cabelo" type="Sprite2D" parent="."]
 position = Vector2(-2, -235)
@@ -54,4 +51,3 @@ scale = Vector2(0.281, 0.281)
 texture = ExtResource("5_wtdm0")
 hframes = 2
 vframes = 2
-frame = 1

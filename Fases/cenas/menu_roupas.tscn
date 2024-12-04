@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d0iy8gvd40fsb"]
 
-[ext_resource type="Script" path="res://Cenas/Fases/menu_roupas.gd" id="1_5t2ob"]
+[ext_resource type="Script" path="res://Fases/scripts/menu_roupas.gd" id="1_5t2ob"]
 
 [node name="Menu_Roupas" type="Node2D"]
 script = ExtResource("1_5t2ob")
