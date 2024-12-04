@@ -1,0 +1,194 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0iy8gvd40fsb"]
+
+[ext_resource type="Script" path="res://Cenas/Fases/menu_roupas.gd" id="1_5t2ob"]
+
+[node name="Menu_Roupas" type="Node2D"]
+script = ExtResource("1_5t2ob")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1081.0
+offset_bottom = 1080.0
+color = Color(0.941176, 0.462745, 0.768627, 1)
+
+[node name="Selecoes" type="GridContainer" parent="."]
+offset_left = 35.0
+offset_top = 22.0
+offset_right = 384.0
+offset_bottom = 123.0
+scale = Vector2(2.829, 2.829)
+size_flags_horizontal = 4
+columns = 6
+
+[node name="Botao_cabelo" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Cabelo"
+
+[node name="Botao_olho" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Olhos"
+
+[node name="Botao_pele" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Pele"
+
+[node name="Botao_top" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Top"
+
+[node name="Botao_bottom" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Bottom"
+
+[node name="Botao_sapato" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Sapatos"
+
+[node name="Cabelos" type="GridContainer" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = 121.0
+offset_right = 55.0
+offset_bottom = 141.0
+columns = 2
+
+[node name="Cabelo1" type="Button" parent="Cabelos"]
+layout_mode = 2
+
+[node name="Cabelo2" type="Button" parent="Cabelos"]
+layout_mode = 2
+
+[node name="Cabelo3" type="Button" parent="Cabelos"]
+layout_mode = 2
+
+[node name="Cabelo4" type="Button" parent="Cabelos"]
+layout_mode = 2
+
+[node name="Olhos" type="GridContainer" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = 121.0
+offset_right = 67.0
+offset_bottom = 153.0
+pivot_offset = Vector2(16, 16)
+columns = 3
+
+[node name="Verde" type="Button" parent="Olhos"]
+layout_mode = 2
+
+[node name="Azul" type="Button" parent="Olhos"]
+layout_mode = 2
+
+[node name="Castanho" type="Button" parent="Olhos"]
+layout_mode = 2
+
+[node name="Rosa" type="Button" parent="Olhos"]
+layout_mode = 2
+
+[node name="Roxo" type="Button" parent="Olhos"]
+layout_mode = 2
+
+[node name="Preto" type="Button" parent="Olhos"]
+layout_mode = 2
+
+[node name="Peles" type="GridContainer" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = 121.0
+offset_right = 67.0
+offset_bottom = 153.0
+pivot_offset = Vector2(16, 16)
+columns = 3
+
+[node name="p1" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="p2" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="p3" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="p4" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="p5" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="p6" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="p7" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="p8" type="Button" parent="Peles"]
+layout_mode = 2
+
+[node name="Tops" type="GridContainer" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = 121.0
+offset_right = 55.0
+offset_bottom = 141.0
+pivot_offset = Vector2(10, 10)
+columns = 2
+
+[node name="Top_SF" type="Button" parent="Tops"]
+layout_mode = 2
+
+[node name="Top_SC" type="Button" parent="Tops"]
+layout_mode = 2
+
+[node name="Top_EF" type="Button" parent="Tops"]
+layout_mode = 2
+
+[node name="Top_EC" type="Button" parent="Tops"]
+layout_mode = 2
+
+[node name="Bottoms" type="GridContainer" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = 121.0
+offset_right = 55.0
+offset_bottom = 141.0
+pivot_offset = Vector2(10, 10)
+columns = 2
+
+[node name="Bot_SF" type="Button" parent="Bottoms"]
+layout_mode = 2
+
+[node name="Bot_SC" type="Button" parent="Bottoms"]
+layout_mode = 2
+
+[node name="Bot_EF" type="Button" parent="Bottoms"]
+layout_mode = 2
+
+[node name="Bot_EC" type="Button" parent="Bottoms"]
+layout_mode = 2
+
+[node name="Sapatos" type="GridContainer" parent="."]
+visible = false
+offset_left = 35.0
+offset_top = 121.0
+offset_right = 55.0
+offset_bottom = 141.0
+pivot_offset = Vector2(10, 10)
+columns = 2
+
+[node name="Sap_SF" type="Button" parent="Sapatos"]
+layout_mode = 2
+
+[node name="Sap_SC" type="Button" parent="Sapatos"]
+layout_mode = 2
+
+[node name="Sap_EF" type="Button" parent="Sapatos"]
+layout_mode = 2
+
+[node name="Sap_EC" type="Button" parent="Sapatos"]
+layout_mode = 2
+
+[connection signal="pressed" from="Selecoes/Botao_cabelo" to="." method="escolha_menu" binds= ["Cabelos"]]
+[connection signal="pressed" from="Selecoes/Botao_olho" to="." method="escolha_menu" binds= ["Olhos"]]
+[connection signal="pressed" from="Selecoes/Botao_pele" to="." method="escolha_menu" binds= ["Peles"]]
+[connection signal="pressed" from="Selecoes/Botao_top" to="." method="escolha_menu" binds= ["Tops"]]
+[connection signal="pressed" from="Selecoes/Botao_bottom" to="." method="escolha_menu" binds= ["Bottoms"]]
+[connection signal="pressed" from="Selecoes/Botao_sapato" to="." method="escolha_menu" binds= ["Sapatos"]]
