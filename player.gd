@@ -1,35 +1,19 @@
 extends Node2D
-@export var val_cabelo := 0
-@export var val_olho := 0
-@export var val_pele := 0
-@export var val_top := 0
-@export var val_bottom := 0
-@export var val_sapato := 0
 
-func set_cabelo():
+func set_cabelo(val_cabelo:int):
 	$Cabelo.frame = val_cabelo
 
-func set_olho():
+func set_olho(val_olho:int):
 	$Olho.frame = val_olho
 
-func set_pele():
+func set_pele(val_pele:int):
 	$Pele.frame = val_pele
 
-func set_top():
+func set_top(val_top:int):
 	$Top.frame = val_top
 
-func set_bottom():
+func set_bottom(val_bottom:int):
 	$Bottom.frame = val_bottom
 
-func set_sapato():
+func set_sapato(val_sapato:int):
 	$Sapato.frame = val_sapato
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

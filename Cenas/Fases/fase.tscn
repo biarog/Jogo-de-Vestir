@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfyw8v2qrrnth"]
+[gd_scene load_steps=5 format=3 uid="uid://bfyw8v2qrrnth"]
 
-[ext_resource type="PackedScene" uid="uid://dpl3o42ejwcha" path="res://player.tscn" id="1_2bxre"]
 [ext_resource type="Script" path="res://Cenas/Fases/fase.gd" id="1_mpbjv"]
 [ext_resource type="PackedScene" uid="uid://d0iy8gvd40fsb" path="res://Cenas/Fases/menu_roupas.tscn" id="2_kafhn"]
+[ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Cenas/corpo_1.tscn" id="3_a4llp"]
+[ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Cenas/corpo_2.tscn" id="4_4xh6d"]
 
 [node name="Fase" type="Node2D"]
 script = ExtResource("1_mpbjv")
@@ -12,10 +13,14 @@ offset_right = 840.0
 offset_bottom = 1080.0
 color = Color(0.515367, 0.779628, 0.78915, 1)
 
-[node name="Player" parent="." instance=ExtResource("1_2bxre")]
-position = Vector2(422, 575)
-
 [node name="Menu_Roupas" parent="." instance=ExtResource("2_kafhn")]
 position = Vector2(839, 0)
+
+[node name="Corpo_1" parent="." instance=ExtResource("3_a4llp")]
+visible = false
+position = Vector2(395, 661)
+
+[node name="Corpo_2" parent="." instance=ExtResource("4_4xh6d")]
+position = Vector2(396, 664)
 
 [connection signal="valor_atualizado" from="Menu_Roupas" to="." method="_on_menu_roupas_valor_atualizado"]

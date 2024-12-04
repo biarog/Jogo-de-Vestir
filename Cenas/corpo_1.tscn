@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3lbcwsw0uigv"]
+[gd_scene load_steps=8 format=3 uid="uid://b3lbcwsw0uigv"]
 
 [ext_resource type="Texture2D" uid="uid://betl0ucunpir0" path="res://Artes/Aparencia/Corpo1/sprite_corpo_1.png" id="1_lv80w"]
 [ext_resource type="Script" path="res://player.gd" id="1_nnlqt"]
@@ -6,8 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://bhj7m630wvjmf" path="res://Artes/Aparencia/Corpo1/sprite_top_c1.png" id="3_thf4i"]
 [ext_resource type="Texture2D" uid="uid://d0eahdx2wiyv2" path="res://Artes/Aparencia/Corpo1/sprite_bottom_c1.png" id="4_qpfo7"]
 [ext_resource type="Texture2D" uid="uid://m7a8heapwow0" path="res://Artes/Aparencia/Corpo1/sprite_sapato_c1.png" id="5_r3sxy"]
+[ext_resource type="Texture2D" path="res://Artes/Aparencia/Corpo1/sprite_cabelo_c1.png" id="6_yi55v"]
 
 [node name="Corpo_1" type="Node2D"]
+position = Vector2(2, -1)
 script = ExtResource("1_nnlqt")
 
 [node name="Pele" type="Sprite2D" parent="."]
@@ -22,7 +24,13 @@ texture = ExtResource("2_qyu83")
 hframes = 2
 vframes = 3
 
-[node name="Cabelo" type="Sprite2D" parent="."]
+[node name="Bottom" type="Sprite2D" parent="."]
+position = Vector2(-1, 6.99998)
+scale = Vector2(0.281, 0.281)
+texture = ExtResource("4_qpfo7")
+hframes = 2
+vframes = 2
+frame = 2
 
 [node name="Top" type="Sprite2D" parent="."]
 position = Vector2(-1, -131)
@@ -30,16 +38,18 @@ scale = Vector2(0.281023, 0.281023)
 texture = ExtResource("3_thf4i")
 hframes = 2
 vframes = 2
+frame = 2
 
-[node name="Bottom" type="Sprite2D" parent="."]
-position = Vector2(0, 31)
-scale = Vector2(0.281, 0.281)
-texture = ExtResource("4_qpfo7")
+[node name="Cabelo" type="Sprite2D" parent="."]
+position = Vector2(-2, -234)
+scale = Vector2(0.271904, 0.271904)
+texture = ExtResource("6_yi55v")
 hframes = 2
 vframes = 2
+frame = 2
 
 [node name="Sapato" type="Sprite2D" parent="."]
-position = Vector2(3, 277)
+position = Vector2(0, 277)
 scale = Vector2(0.281, 0.281)
 texture = ExtResource("5_r3sxy")
 hframes = 2
