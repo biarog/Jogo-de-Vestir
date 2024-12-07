@@ -2,7 +2,6 @@ extends Node2D
 
 @export var val_cabelo := 0
 @export var val_olho := 0
-@export var val_pele := 0
 @export var val_top := 0
 @export var val_bottom := 0
 @export var val_sapato := 0
@@ -16,7 +15,6 @@ func _ready():
 func hide_all():
 	$Cabelos.hide()
 	$Olhos.hide()
-	$Peles.hide()
 	$Tops.hide()
 	$Bottoms.hide()
 	$Sapatos.hide()
@@ -32,11 +30,6 @@ func escolha_cabelo(val:int):
 
 func escolha_olho(val: int):
 	self.val_olho = val
-	valor_atualizado.emit()
-
-
-func escolha_pele(val: int):
-	self.val_pele = val
 	valor_atualizado.emit()
 
 func escolha_top(val: int):

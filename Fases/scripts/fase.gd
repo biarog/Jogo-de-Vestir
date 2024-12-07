@@ -48,7 +48,6 @@ func sistema_avaliacao_roupas():
 func _on_menu_roupas_valor_atualizado() -> void:
 	player.set_cabelo($Menu_Roupas.val_cabelo)
 	player.set_olho($Menu_Roupas.val_olho)
-	player.set_pele($Menu_Roupas.val_pele)
 	player.set_top($Menu_Roupas.val_top)
 	player.set_bottom($Menu_Roupas.val_bottom)
 	player.set_sapato($Menu_Roupas.val_sapato)
