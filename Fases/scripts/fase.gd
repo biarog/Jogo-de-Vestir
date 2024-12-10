@@ -58,7 +58,6 @@ func sistema_avaliacao_roupas():
 			pontuacao = pontuacao+1
 	
 	Dialogic.VAR.pontuacao = pontuacao
-	print(pontuacao)
 	Dialogic.start(nome_tl_fim)
 	
 	if retorno == null:
