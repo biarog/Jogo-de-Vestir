@@ -17,3 +17,21 @@ func set_bottom(val_bottom:int):
 
 func set_sapato(val_sapato:int):
 	$Sapato.frame = val_sapato
+
+func get_cabelo() -> int:
+	return $Cabelo.frame
+
+func get_olho() -> int:
+	return $Olho.frame
+
+func get_pele() -> int:
+	return $Pele.frame
+
+func get_top() -> int:
+	return $Top.frame
+
+func get_bottom() -> int:
+	return $Bottom.frame
+
+func get_sapato() -> int:
+	return $Sapato.frame

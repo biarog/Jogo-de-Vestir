@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Jogo de Vestir"
-run/main_scene="res://Cenas/tela_inicio.tscn"
+run/main_scene="res://tela_inicio.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -22,15 +22,26 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Antonella Versanti": "res://Dialogic/Personagens/Antonella Versanti.dch",
+"Costurete": "res://Dialogic/Personagens/Costurete.dch",
+"Emilia Maravilha": "res://Dialogic/Personagens/Emilia Maravilha.dch",
+"Gabriela Martins": "res://Dialogic/Personagens/Gabriela Martins.dch",
+"João H Alazão": "res://Dialogic/Personagens/João H Alazão.dch",
+"Marianne Getulio": "res://Dialogic/Personagens/Marianne Getulio.dch",
 "Narrador": "res://Dialogic/Personagens/Narrador.dch"
 }
 directories/dtl_directory={
+"Fim_Fase_1": "res://Dialogic/Cenas_VN/Fim_Fase_1.dtl",
 "Intro_Fase_1": "res://Dialogic/Cenas_VN/Intro_Fase_1.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://Dialogic/Cenas_VN/EstiloVn.tres"]
 layout/default_style="res://Cenas_VN/EstiloVn.tres"
-variables={}
+variables={
+"categoria_fc": 0,
+"categoria_se": 0,
+"pontuacao": 0
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

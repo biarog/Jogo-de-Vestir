@@ -1,0 +1,19 @@
+[background arg="res://Artes/background1.png" fade="0.0"]
+Costurete: (Acho que a minha roupa combinou muito com o tema! Ficou exatamente do jeitinho que eu queria! Vou arrasar!)
+Costurete: (Olho receosa entre os jurados, minhas mãos fortemente entrelaçadas à frente de meu corpo. Torço para que eles me avaliem bem!)
+if {pontuacao} < 3:
+	"Antonella Versanti": Decepcionante.
+	"João H Alazão": Não era exatamente isso que eu estava esperando desse tema. Mas você vai ter outras chances de se redimir!
+	"Emilia Maravilha": É…não é nada deslumbrante!
+	"Gabriela Martins": Ei! Não desanime, Costurete. Eu também tive alguns problemas durante essa fase, podemos conversar um pouco sobre isso, se quiser!
+elif {pontuacao} < 6:
+	"Antonella Versanti": Não sei bem se você entendeu o tema completamente.
+	"João H Alazão": Esse é um ótimo início! Um pouco mais de prática e você será um grande nome na indústria!
+	"Emilia Maravilha": Acho que ficou legal? Talvez um pouco mais de brilho?
+	"Gabriela Martins": Ei! Não desanime, Costurete. Eu também tive alguns problemas durante essa fase, podemos conversar um pouco sobre isso, se quiser!
+elif {pontuacao} == 6:
+	"Antonella Versanti": Um design passável. As peças até que combinam. Fez um bom trabalho.”
+	"João H Alazão": As cores! Os padrões! A classe de cada um dos itens é a mais pura perfeição! Nunca vi nada igual! você definitivamente tem talento para a moda!
+	"Emilia Maravilha": Uau! Que deslumbrante! Você acha que eu posso usar essa roupa em algum show meu? Combinaria tanto com meu novo álbum! Deixa, por favorzinho!
+	"Gabriela Martins": M-meus parabéns, Costurete, eu achei sua criação muito linda! Acho que você mereceu ganhar essa fase! Será que pode me dar algumas dicas de como conseguir inspirações tão lindas?
+[end_timeline]
