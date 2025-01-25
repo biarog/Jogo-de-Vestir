@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=3 uid="uid://tiqp58w64ol4"]
+
+[ext_resource type="PackedScene" uid="uid://duu18ax3r6re0" path="res://Menus/cenas/change_scene_button.tscn" id="1_glt1r"]
+[ext_resource type="Script" path="res://Menus/scripts/level_select_screen.gd" id="1_uo1cu"]
+
+[node name="LevelSelectScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uo1cu")
+dir_path = "res://Fases/cenas/levels"
+
+[node name="Arte" type="Node2D" parent="."]
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1.64, 1.64)
+
+[node name="Label" type="Label" parent="Camera"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -130.939
+offset_top = -268.585
+offset_right = 128.061
+offset_bottom = -218.585
+grow_horizontal = 2
+pivot_offset = Vector2(129.5, 25)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "Level Selection"
+
+[node name="MoveScreenRight" type="Button" parent="Camera"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 496.561
+offset_top = -24.5851
+offset_right = 514.561
+offset_bottom = 6.41488
+grow_horizontal = 0
+grow_vertical = 2
+pivot_offset = Vector2(9, 15.5)
+text = ">"
+
+[node name="MoveScreenLeft" type="Button" parent="Camera"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -516.439
+offset_top = -24.5851
+offset_right = -498.439
+offset_bottom = 6.41488
+grow_vertical = 2
+pivot_offset = Vector2(9, 15.5)
+text = "<"
+
+[node name="ReturnButton" parent="Camera" instance=ExtResource("1_glt1r")]
+offset_left = -552.439
+offset_top = -311.585
+offset_right = -471.439
+offset_bottom = -258.585
+pivot_offset = Vector2(40.5, 26.5)
+theme_override_font_sizes/font_size = 32
+text = "back"
+script = null
+
+[node name="GridLevels" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 910.0
+offset_top = 530.0
+offset_right = 2846.0
+offset_bottom = 561.0
+theme_override_constants/h_separation = 1000
+columns = 2
+
+[connection signal="pressed" from="Camera/MoveScreenRight" to="." method="_on_move_screen_right_pressed"]
+[connection signal="pressed" from="Camera/MoveScreenLeft" to="." method="_on_move_screen_left_pressed"]

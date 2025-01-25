@@ -1,12 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfyw8v2qrrnth"]
+[gd_scene load_steps=5 format=3 uid="uid://dwclbp7mcnw54"]
 
-[ext_resource type="Script" path="res://Fases/scripts/fase.gd" id="1_mpbjv"]
-[ext_resource type="PackedScene" uid="uid://d0iy8gvd40fsb" path="res://Fases/cenas/menu_roupas.tscn" id="2_kafhn"]
-[ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Player/Cenas/corpo_1.tscn" id="3_a4llp"]
-[ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Player/Cenas/corpo_2.tscn" id="4_4xh6d"]
+[ext_resource type="Script" path="res://Fases/scripts/fase.gd" id="1_xihb7"]
+[ext_resource type="PackedScene" uid="uid://d0iy8gvd40fsb" path="res://Fases/cenas/menu_roupas.tscn" id="2_8mig8"]
+[ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Player/Cenas/corpo_1.tscn" id="3_s0hn1"]
+[ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Player/Cenas/corpo_2.tscn" id="4_6fmvg"]
 
 [node name="Fase" type="Node2D"]
-script = ExtResource("1_mpbjv")
+script = ExtResource("1_xihb7")
 retorno = "res://tela_inicio.tscn"
 nome_tl_inicio = "Intro_Fase_1"
 nome_tl_fim = "Fim_Fase_1"
@@ -16,14 +16,14 @@ offset_right = 840.0
 offset_bottom = 1080.0
 color = Color(0.515367, 0.779628, 0.78915, 1)
 
-[node name="Menu_Roupas" parent="." instance=ExtResource("2_kafhn")]
+[node name="Menu_Roupas" parent="." instance=ExtResource("2_8mig8")]
 position = Vector2(839, 0)
 
-[node name="Corpo_1" parent="." instance=ExtResource("3_a4llp")]
+[node name="Corpo_1" parent="." instance=ExtResource("3_s0hn1")]
 visible = false
 position = Vector2(395, 661)
 
-[node name="Corpo_2" parent="." instance=ExtResource("4_4xh6d")]
+[node name="Corpo_2" parent="." instance=ExtResource("4_6fmvg")]
 position = Vector2(396, 664)
 
 [node name="Enviar_resultado" type="Button" parent="."]
