@@ -1,0 +1,37 @@
+[style name="EstiloVn"]
+[background arg="res://Artes/background1.png" fade="0.0"]
+Narrador: Boa noite, costureiros de plantão!! Estamos de volta com mais uma temporada de Costurando Sonhos! Para nossos novos espectadores, irei explicar como tudo isso funciona!
+Narrador: A competição é dividida por fases, cada uma delas terá um tema específico! Dessa forma, se pedirmos um conjunto de roupas para um passeio ao parque aquático, nossas competidoras não devem aparecer com um vestido de gala!
+Narrador: Em cada uma das fases, nossas queridas concorrentes irão fazer tudo do zero! Seja o design inicial ou os menores detalhes feitos à mão, todos serão avaliados por uma equipe de jurados qualificados e conhecidos por vocês, espectadores.
+Narrador: As notas dadas por nossos incríveis jurados podem variar de acordo com a coerência das roupas com o tema escolhido, então, as competidoras podem receber uma nota perfeita, uma nota parcialmente perfeita ou uma falha total!!
+Narrador: Nossa vencedora será decidida após todas as fases serem concluídas! Espero que todas deem o melhor de si para agradar aos grandes nomes da indústria. A melhor concorrente receberá oportunidades exclusivas no mundo da moda e a chance de alavancar a carreira de designer!
+Narrador: Agora, vamos ver quem são os ilustres jurados dessa temporada de Costurando Sonhos!
+Narrador: Nossa primeira jurada é Antonella Versanti! Uma das mais jovens a se consagrar como designer chefe da Bucci!
+"Antonella Versanti": (Ela apenas assente com a cabeça, cumprimentando o público.)
+Narrador: Nosso segundo jurado é o mais querido chefe de produção da Oui-Oui vitton! Apresento a vocês João Humberto Alazão!
+"João H Alazão": Opa! Estou muito honrado de ter sido escolhido como um dos jurados dessa temporada de Costurando Sonhos! Espero que possamos nos divertir muito juntos!
+Narrador: Por fim, a jurada surpresa da temporada é ela, o nome mais quente na indústria musical! Emilia Maravilha!
+"Emilia Maravilha": Oi, pessoal!! Sentiram a minha falta? Hihi! Sou eu mesma!! Emilia Maravilha!!!
+Costurete: (Uau! Eu nunca imaginei que um dia estaria vivendo isso! É tudo tão mágico e diferente de ver pela televisão!)
+Narrador: Muito bem, queridos costureiros de plantão! Antes de iniciarmos a primeira fase, vamos conhecer as nossas estrelas do show! As nossas competidoras!
+Narrador: As três escolhidas da temporada são Gabriela Martins, Marianne Getúlio e Costurete!! Sejam todas muito bem-vindas ao nosso programa!
+# Aqui a gente vai pra um flashback das competidoras se conhecendo
+Costurete: (Estou tão nervosa para a competição, mal posso esperar para conhecer minhas concorrentes.)
+Costurete: (As portas do elevador se abrem e duas outras garotas entram.)
+Costurete: (Uma delas sorri para mim, os olhos azuis se curvando em meias luas.)
+Costurete: (A outra garota tem uma expressão que não consigo decifrar, mas um arrepio desce por minha espinha quando nossos olhos se encontram.)
+"Gabriela Martins": O-oi! Prazer em conhecer vocês duas, eu sou a Gabriela! Espero que nos demos bem durante o programa!
+Costurete: (Eu sorrio levemente com a apresentação, suspirando aliviada que pelo menos uma das concorrentes parece ser amigável.)
+Costurete: (Na outra ponta do elevador, a outra garota olha Gabriela de cima a baixo, posso ver um pouco de escárnio em seu olhar.)
+"Marianne Getulio": Marianne. Vou deixar bem claro que não tenho nenhuma intenção de ser amiguinha de vocês. Eu vou ganhar essa competição custe o que custar, então não quero perder tempo fazendo amizades que não me beneficiam.
+Costurete: (Fico imóvel por alguns segundos, a fala de Marianne me impactou e eu luto comigo mesma para decidir se eu deveria me apresentar amigavelmente como Gabriela ou se Marianne realmente está certa e eu não deveria estar perdendo tempo com cortesias vazias.)
+# Escolhas do jogador!
+# Criar uma variável pra somar os pontos de escolha de fala
+- (Sim. É uma competição e ninguém está aqui para fazer amizades. Se eu me apresentar, posso estar demonstrando que não estou levando essa oportunidade tão a sério.)
+	Costurete: (Depois de decidir não dizer nada, percebo que Gabriela parece um pouco mais ansiosa, seus olhos, antes sorridentes, se desmancham em linhas decrescentes. Já Marianne mal parece notar o clima desagradável que se formou dentro do estreito elevador.)
+- (Não, Marianne está errada! Não vejo nada de errado em retribuir um cumprimento com um pouco de simpatia.) | [=""]
+	Costurete: Prazer!! Eu sou Costurete! Nossa… mal consigo acreditar que consegui essa oportunidade tão incrível! Estou muito ansiosa para aprender mais sobre vocês!
+	Costurete: (Gabriela parece muito mais aliviada depois de ouvir minha apresentação, suas mãos, antes fortemente fechadas em punhos, relaxam e ela sorri para mim.)
+	"Marianne Getulio": Quero ver o quão amigáveis vocês continuarão a ser quando a competição realmente começar.
+	Costurete: (Eu mal tenho tempo de olhar Marianne pelo canto dos olhos, já que as portas do elevador se abrem e ela sai apressada a passos largos à frente.)
+[end_timeline]

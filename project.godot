@@ -23,16 +23,27 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Antonella Versanti": "res://Dialogic/Personagens/Antonella Versanti.dch",
+"Carta": "res://Dialogic/Personagens/Carta.dch",
 "Costurete": "res://Dialogic/Personagens/Costurete.dch",
 "Emilia Maravilha": "res://Dialogic/Personagens/Emilia Maravilha.dch",
+"Estagiário": "res://Dialogic/Personagens/Estagiário.dch",
 "Gabriela Martins": "res://Dialogic/Personagens/Gabriela Martins.dch",
 "João H Alazão": "res://Dialogic/Personagens/João H Alazão.dch",
 "Marianne Getulio": "res://Dialogic/Personagens/Marianne Getulio.dch",
 "Narrador": "res://Dialogic/Personagens/Narrador.dch"
 }
 directories/dtl_directory={
+"Epilogo": "res://Dialogic/Cenas_VN/Epilogo.dtl",
 "Fim_Fase_1": "res://Dialogic/Cenas_VN/Fim_Fase_1.dtl",
-"Intro_Fase_1": "res://Dialogic/Cenas_VN/Intro_Fase_1.dtl"
+"Fim_Fase_2": "res://Dialogic/Cenas_VN/Fim_Fase_2.dtl",
+"Fim_Fase_3": "res://Dialogic/Cenas_VN/Fim_Fase_3.dtl",
+"Fim_Fase_4": "res://Dialogic/Cenas_VN/Fim_Fase_4.dtl",
+"Intro_Fase_1": "res://Dialogic/Cenas_VN/Intro_Fase_1.dtl",
+"Intro_Fase_2": "res://Dialogic/Cenas_VN/Intro_Fase_2.dtl",
+"Intro_Fase_3": "res://Dialogic/Cenas_VN/Intro_Fase_3.dtl",
+"Intro_Fase_4": "res://Dialogic/Cenas_VN/Intro_Fase_4.dtl",
+"Intro_Passado": "res://Dialogic/Cenas_VN/Intro_Passado.dtl",
+"Intro_Personagens": "res://Dialogic/Cenas_VN/Intro_Personagens.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://Dialogic/Cenas_VN/EstiloVn.tres"]
