@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Jogo de Vestir"
-run/main_scene="res://Menus/cenas/tela_inicio.tscn"
+run/main_scene="res://Personalização Inicial/cenas/selecionar_corpo.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 

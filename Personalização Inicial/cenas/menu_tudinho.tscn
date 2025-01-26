@@ -67,10 +67,6 @@ text = "Bottom"
 layout_mode = 2
 text = "Sapatos"
 
-[node name="Botao_cor" type="Button" parent="Selecoes"]
-layout_mode = 2
-text = "Cor"
-
 [node name="Cabelos" type="GridContainer" parent="."]
 visible = false
 anchors_preset = 8
@@ -314,7 +310,6 @@ layout_mode = 2
 [connection signal="pressed" from="Selecoes/Botao_top" to="." method="escolha_menu" binds= ["Tops"]]
 [connection signal="pressed" from="Selecoes/Botao_bottom" to="." method="escolha_menu" binds= ["Bottoms"]]
 [connection signal="pressed" from="Selecoes/Botao_sapato" to="." method="escolha_menu" binds= ["Sapatos"]]
-[connection signal="pressed" from="Selecoes/Botao_cor" to="." method="escolha_menu" binds= ["Cores"]]
 [connection signal="pressed" from="Cabelos/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
 [connection signal="pressed" from="Cabelos/Cabelo2" to="." method="escolha_cabelo" binds= [1]]
 [connection signal="pressed" from="Cabelos/Cabelo3" to="." method="escolha_cabelo" binds= [2]]
@@ -337,5 +332,3 @@ layout_mode = 2
 [connection signal="pressed" from="Sapatos/Sap_SC" to="." method="escolha_sapato" binds= [1]]
 [connection signal="pressed" from="Sapatos/Sap_EF" to="." method="escolha_sapato" binds= [2]]
 [connection signal="pressed" from="Sapatos/Sap_EC" to="." method="escolha_sapato" binds= [3]]
-[connection signal="pressed" from="Cores/0" to="." method="escolha_cor" binds= [0]]
-[connection signal="pressed" from="Cores/1" to="." method="escolha_cor" binds= [1]]

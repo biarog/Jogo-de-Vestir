@@ -19,8 +19,7 @@ func hide_all():
 	$Tops.hide()
 	$Bottoms.hide()
 	$Sapatos.hide()
-	$Cores.hide()
-
+	
 func escolha_menu(nome:String):
 	hide_all()
 	var nodulo := find_child(nome)
@@ -44,8 +43,4 @@ func escolha_bottom(val: int):
 
 func escolha_sapato(val: int):
 	self.val_sapato = val
-	valor_atualizado.emit()
-
-func escolha_cor(val: int):
-	self.val_cor = val
 	valor_atualizado.emit()

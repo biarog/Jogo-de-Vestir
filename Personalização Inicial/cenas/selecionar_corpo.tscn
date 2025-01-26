@@ -1,22 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfgpjm83rfm1u"]
+[gd_scene load_steps=4 format=3 uid="uid://cfgpjm83rfm1u"]
 
-[ext_resource type="Script" path="res://Menus/cenas/selecionar_corpo.gd" id="1_35ke0"]
+[ext_resource type="Script" path="res://Personalização Inicial/scripts/selecionar_corpo.gd" id="1_35ke0"]
 [ext_resource type="Texture2D" uid="uid://kidwuo1ahqjd" path="res://Corpos Rosinhas/corpo 1 rosinha.png" id="2_mfhtf"]
 [ext_resource type="Texture2D" uid="uid://dh6qa7n7fktcd" path="res://Corpos Rosinhas/corpo 2 rosinha.png" id="3_wgvo8"]
-
-[sub_resource type="GDScript" id="GDScript_iovyx"]
-script/source = "extends Button
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-"
 
 [node name="SelecionarCorpo" type="Node2D"]
 script = ExtResource("1_35ke0")
@@ -26,7 +12,6 @@ offset_left = 287.0
 offset_top = 327.0
 offset_right = 607.0
 offset_bottom = 908.0
-script = SubResource("GDScript_iovyx")
 
 [node name="corpo_2" type="Button" parent="."]
 offset_left = 1303.0
