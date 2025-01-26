@@ -58,6 +58,6 @@ offset_right = 454.393
 offset_bottom = 337.91
 flat = true
 script = ExtResource("7_gf1c7")
-scene_path = "res://Fases/cenas/fase.tscn"
+scene_path = "res://Menus/cenas/level_select_screen.tscn"
 
 [connection signal="pressed" from="Botão_Inicio" to="Botão_Inicio" method="_on_pressed"]

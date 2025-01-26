@@ -7,7 +7,7 @@
 
 [node name="Fase" type="Node2D"]
 script = ExtResource("1_t8r38")
-retorno = "res://tela_inicio.tscn"
+retorno = "res://Menus/cenas/level_select_screen.tscn"
 nome_tl_inicio = "Intro_Fase_1"
 nome_tl_fim = "Fim_Fase_1"
 
