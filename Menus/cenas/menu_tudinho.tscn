@@ -1,30 +1,31 @@
-[gd_scene load_steps=20 format=3 uid="uid://d0iy8gvd40fsb"]
+[gd_scene load_steps=20 format=3 uid="uid://hwaedlkev7jf"]
 
-[ext_resource type="Script" path="res://Fases/scripts/menu_roupas.gd" id="1_5t2ob"]
-[ext_resource type="Texture2D" uid="uid://k7ujbub0a8dh" path="res://Artes/Botoes/Cabelo1.png" id="2_4v786"]
-[ext_resource type="Texture2D" uid="uid://dltc23krir1a7" path="res://Artes/Botoes/Cabelo2.png" id="3_c66ls"]
-[ext_resource type="Texture2D" uid="uid://bq7mwisglw6e6" path="res://Artes/Botoes/Cabelo3.png" id="4_e57r8"]
-[ext_resource type="Texture2D" uid="uid://buxk4w5kqywxw" path="res://Artes/Botoes/OlhosVerdes.png" id="5_d2c8m"]
-[ext_resource type="Texture2D" uid="uid://cc6k8niy46c3u" path="res://Artes/Botoes/OlhosAzuis.png" id="6_6hcc1"]
-[ext_resource type="Texture2D" uid="uid://bionvy4fvs13u" path="res://Artes/Botoes/OlhosCastanhos.png" id="7_px3m8"]
-[ext_resource type="Texture2D" uid="uid://bcl0b8gaf8ne3" path="res://Artes/Botoes/OlhosRosas.png" id="8_t2mhm"]
-[ext_resource type="Texture2D" uid="uid://cjrxq2b2va5o5" path="res://Artes/Botoes/OlhosRoxos.png" id="9_gqx32"]
-[ext_resource type="Texture2D" uid="uid://d3raf3cgibf67" path="res://Artes/Botoes/OlhosPretos.png" id="10_8mx42"]
-[ext_resource type="Texture2D" uid="uid://bebprb7k2p8vi" path="res://Artes/Botoes/Top_SF.png" id="11_urbj1"]
-[ext_resource type="Texture2D" uid="uid://bb108w88w5kax" path="res://Artes/Botoes/Top_SC.png" id="12_ss48n"]
-[ext_resource type="Texture2D" uid="uid://ho7r4eqrn0de" path="res://Artes/Botoes/Top_EC.png" id="13_h45y6"]
-[ext_resource type="Texture2D" uid="uid://qhpijfpeelu4" path="res://Artes/Botoes/Bot_SF.png" id="14_dka2d"]
-[ext_resource type="Texture2D" uid="uid://crieo8ucjlb7l" path="res://Artes/Botoes/Bot_SC.png" id="15_shoyl"]
-[ext_resource type="Texture2D" uid="uid://1gt8m06hdgx3" path="res://Artes/Botoes/Bot_EC.png" id="16_381j1"]
-[ext_resource type="Texture2D" uid="uid://cdnw5rljewpif" path="res://Artes/Botoes/Sap_SF.png" id="17_solpx"]
-[ext_resource type="Texture2D" uid="uid://cef8i7hicdkfa" path="res://Artes/Botoes/Sap_SC.png" id="18_ah5er"]
-[ext_resource type="Texture2D" uid="uid://cu6eqxbkh6ol8" path="res://Artes/Botoes/Sap_EC.png" id="19_cqp3b"]
+[ext_resource type="Script" path="res://Fases/scripts/menu_roupas.gd" id="1_t5yqr"]
+[ext_resource type="Texture2D" uid="uid://k7ujbub0a8dh" path="res://Artes/Botoes/Cabelo1.png" id="2_i7264"]
+[ext_resource type="Texture2D" uid="uid://dltc23krir1a7" path="res://Artes/Botoes/Cabelo2.png" id="3_cpvgt"]
+[ext_resource type="Texture2D" uid="uid://bq7mwisglw6e6" path="res://Artes/Botoes/Cabelo3.png" id="4_i6cjw"]
+[ext_resource type="Texture2D" uid="uid://buxk4w5kqywxw" path="res://Artes/Botoes/OlhosVerdes.png" id="5_xuwbi"]
+[ext_resource type="Texture2D" uid="uid://cc6k8niy46c3u" path="res://Artes/Botoes/OlhosAzuis.png" id="6_t4gv2"]
+[ext_resource type="Texture2D" uid="uid://bionvy4fvs13u" path="res://Artes/Botoes/OlhosCastanhos.png" id="7_nfqoe"]
+[ext_resource type="Texture2D" uid="uid://bcl0b8gaf8ne3" path="res://Artes/Botoes/OlhosRosas.png" id="8_x31bm"]
+[ext_resource type="Texture2D" uid="uid://cjrxq2b2va5o5" path="res://Artes/Botoes/OlhosRoxos.png" id="9_08k01"]
+[ext_resource type="Texture2D" uid="uid://d3raf3cgibf67" path="res://Artes/Botoes/OlhosPretos.png" id="10_l8pix"]
+[ext_resource type="Texture2D" uid="uid://bebprb7k2p8vi" path="res://Artes/Botoes/Top_SF.png" id="11_kcq2o"]
+[ext_resource type="Texture2D" uid="uid://bb108w88w5kax" path="res://Artes/Botoes/Top_SC.png" id="12_n33wu"]
+[ext_resource type="Texture2D" uid="uid://ho7r4eqrn0de" path="res://Artes/Botoes/Top_EC.png" id="13_w71a6"]
+[ext_resource type="Texture2D" uid="uid://qhpijfpeelu4" path="res://Artes/Botoes/Bot_SF.png" id="14_pyxet"]
+[ext_resource type="Texture2D" uid="uid://crieo8ucjlb7l" path="res://Artes/Botoes/Bot_SC.png" id="15_rc7bk"]
+[ext_resource type="Texture2D" uid="uid://1gt8m06hdgx3" path="res://Artes/Botoes/Bot_EC.png" id="16_felno"]
+[ext_resource type="Texture2D" uid="uid://cdnw5rljewpif" path="res://Artes/Botoes/Sap_SF.png" id="17_ahjlx"]
+[ext_resource type="Texture2D" uid="uid://cef8i7hicdkfa" path="res://Artes/Botoes/Sap_SC.png" id="18_qsgot"]
+[ext_resource type="Texture2D" uid="uid://cu6eqxbkh6ol8" path="res://Artes/Botoes/Sap_EC.png" id="19_ri8yx"]
 
-[node name="Menu_Roupas" type="Node2D"]
-script = ExtResource("1_5t2ob")
+[node name="menu_tudinho" type="Node2D"]
+script = ExtResource("1_t5yqr")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1081.0
+offset_left = -3.0
+offset_right = 1078.0
 offset_bottom = 1080.0
 color = Color(0.941176, 0.462745, 0.768627, 1)
 
@@ -34,10 +35,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 390.0
-offset_top = 82.0
-offset_right = 694.0
-offset_bottom = 113.0
+offset_left = 323.0
+offset_top = 63.0
+offset_right = 666.0
+offset_bottom = 94.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.829, 2.829)
@@ -66,6 +67,10 @@ text = "Bottom"
 layout_mode = 2
 text = "Sapatos"
 
+[node name="Botao_cor" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Cor"
+
 [node name="Cabelos" type="GridContainer" parent="."]
 visible = false
 anchors_preset = 8
@@ -88,15 +93,7 @@ columns = 2
 [node name="Cabelo1" type="Button" parent="Cabelos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("2_4v786")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
-[node name="Cabelo1" type="Button" parent="Cabelos/Cabelo1"]
-custom_minimum_size = Vector2(360, 360)
-layout_mode = 0
-icon = ExtResource("2_4v786")
+icon = ExtResource("2_i7264")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -104,14 +101,14 @@ expand_icon = true
 [node name="Cabelo2" type="Button" parent="Cabelos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("3_c66ls")
+icon = ExtResource("3_cpvgt")
 flat = true
 expand_icon = true
 
 [node name="Cabelo3" type="Button" parent="Cabelos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("4_e57r8")
+icon = ExtResource("4_i6cjw")
 flat = true
 expand_icon = true
 
@@ -133,42 +130,42 @@ columns = 2
 [node name="Verde" type="Button" parent="Olhos"]
 custom_minimum_size = Vector2(330, 180)
 layout_mode = 2
-icon = ExtResource("5_d2c8m")
+icon = ExtResource("5_xuwbi")
 flat = true
 expand_icon = true
 
 [node name="Azul" type="Button" parent="Olhos"]
 custom_minimum_size = Vector2(330, 180)
 layout_mode = 2
-icon = ExtResource("6_6hcc1")
+icon = ExtResource("6_t4gv2")
 flat = true
 expand_icon = true
 
 [node name="Castanho" type="Button" parent="Olhos"]
 custom_minimum_size = Vector2(300, 150)
 layout_mode = 2
-icon = ExtResource("7_px3m8")
+icon = ExtResource("7_nfqoe")
 flat = true
 expand_icon = true
 
 [node name="Rosa" type="Button" parent="Olhos"]
 custom_minimum_size = Vector2(240, 180)
 layout_mode = 2
-icon = ExtResource("8_t2mhm")
+icon = ExtResource("8_x31bm")
 flat = true
 expand_icon = true
 
 [node name="Roxo" type="Button" parent="Olhos"]
 custom_minimum_size = Vector2(240, 180)
 layout_mode = 2
-icon = ExtResource("9_gqx32")
+icon = ExtResource("9_08k01")
 flat = true
 expand_icon = true
 
 [node name="Preto" type="Button" parent="Olhos"]
 custom_minimum_size = Vector2(240, 120)
 layout_mode = 2
-icon = ExtResource("10_8mx42")
+icon = ExtResource("10_l8pix")
 flat = true
 expand_icon = true
 
@@ -186,14 +183,14 @@ columns = 2
 [node name="Top_SF" type="Button" parent="Tops"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("11_urbj1")
+icon = ExtResource("11_kcq2o")
 flat = true
 expand_icon = true
 
 [node name="Top_SC" type="Button" parent="Tops"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("12_ss48n")
+icon = ExtResource("12_n33wu")
 flat = true
 expand_icon = true
 
@@ -204,7 +201,7 @@ layout_mode = 2
 [node name="Top_EC" type="Button" parent="Tops"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("13_h45y6")
+icon = ExtResource("13_w71a6")
 flat = true
 expand_icon = true
 
@@ -222,14 +219,14 @@ columns = 2
 [node name="Bot_SF" type="Button" parent="Bottoms"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("14_dka2d")
+icon = ExtResource("14_pyxet")
 flat = true
 expand_icon = true
 
 [node name="Bot_SC" type="Button" parent="Bottoms"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("15_shoyl")
+icon = ExtResource("15_rc7bk")
 flat = true
 expand_icon = true
 
@@ -240,7 +237,7 @@ layout_mode = 2
 [node name="Bot_EC" type="Button" parent="Bottoms"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("16_381j1")
+icon = ExtResource("16_felno")
 flat = true
 expand_icon = true
 
@@ -258,14 +255,14 @@ columns = 2
 [node name="Sap_SF" type="Button" parent="Sapatos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("17_solpx")
+icon = ExtResource("17_ahjlx")
 flat = true
 expand_icon = true
 
 [node name="Sap_SC" type="Button" parent="Sapatos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("18_ah5er")
+icon = ExtResource("18_qsgot")
 flat = true
 expand_icon = true
 
@@ -276,17 +273,49 @@ layout_mode = 2
 [node name="Sap_EC" type="Button" parent="Sapatos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("19_cqp3b")
+icon = ExtResource("19_ri8yx")
 flat = true
 expand_icon = true
+
+[node name="Cores" type="GridContainer" parent="."]
+visible = false
+offset_left = 219.0
+offset_top = 222.0
+offset_right = 452.0
+offset_bottom = 363.0
+columns = 3
+
+[node name="0" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="1" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="2" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="3" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="4" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="5" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="6" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="7" type="Button" parent="Cores"]
+layout_mode = 2
 
 [connection signal="pressed" from="Selecoes/Botao_cabelo" to="." method="escolha_menu" binds= ["Cabelos"]]
 [connection signal="pressed" from="Selecoes/Botao_olho" to="." method="escolha_menu" binds= ["Olhos"]]
 [connection signal="pressed" from="Selecoes/Botao_top" to="." method="escolha_menu" binds= ["Tops"]]
 [connection signal="pressed" from="Selecoes/Botao_bottom" to="." method="escolha_menu" binds= ["Bottoms"]]
 [connection signal="pressed" from="Selecoes/Botao_sapato" to="." method="escolha_menu" binds= ["Sapatos"]]
+[connection signal="pressed" from="Selecoes/Botao_cor" to="." method="escolha_menu" binds= ["Cores"]]
 [connection signal="pressed" from="Cabelos/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
-[connection signal="pressed" from="Cabelos/Cabelo1/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
 [connection signal="pressed" from="Cabelos/Cabelo2" to="." method="escolha_cabelo" binds= [1]]
 [connection signal="pressed" from="Cabelos/Cabelo3" to="." method="escolha_cabelo" binds= [2]]
 [connection signal="pressed" from="Cabelos/Cabelo4" to="." method="escolha_cabelo" binds= [3]]
@@ -308,3 +337,5 @@ expand_icon = true
 [connection signal="pressed" from="Sapatos/Sap_SC" to="." method="escolha_sapato" binds= [1]]
 [connection signal="pressed" from="Sapatos/Sap_EF" to="." method="escolha_sapato" binds= [2]]
 [connection signal="pressed" from="Sapatos/Sap_EC" to="." method="escolha_sapato" binds= [3]]
+[connection signal="pressed" from="Cores/0" to="." method="escolha_cor" binds= [0]]
+[connection signal="pressed" from="Cores/1" to="." method="escolha_cor" binds= [1]]
