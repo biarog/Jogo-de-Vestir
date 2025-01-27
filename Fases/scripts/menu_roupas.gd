@@ -19,7 +19,7 @@ func hide_all():
 	$Tops.hide()
 	$Bottoms.hide()
 	$Sapatos.hide()
-	$Cores.hide()
+	#$Cores.hide()
 	
 func escolha_menu(nome:String):
 	hide_all()
