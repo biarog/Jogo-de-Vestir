@@ -1,6 +1,6 @@
 extends Node2D
 
-static var corpo: int = 0
+static var corpo: int = 0 #obs: resolvi que, pelo menos por hora, vai ficar aqui o dado do corpo escolhido
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
