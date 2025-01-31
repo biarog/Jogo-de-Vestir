@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var flag := 0
+
 @export var val_cabelo := 0
 @export var val_olho := 0
 @export var val_top := 0
@@ -11,6 +13,8 @@ signal valor_atualizado() #aqui ta com erro. Acho que esse sinal nao aciona nada
 
 
 func _ready():
+	if !flag:
+		$Selecoes/Botao_cor.hide()
 	hide_all()
 
 func hide_all():
@@ -19,7 +23,7 @@ func hide_all():
 	$Tops.hide()
 	$Bottoms.hide()
 	$Sapatos.hide()
-	#$Cores.hide()
+	$Cores.hide()
 	
 func escolha_menu(nome:String):
 	hide_all()

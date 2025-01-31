@@ -37,7 +37,6 @@ scale = Vector2(0.281, 0.281)
 texture = ExtResource("3_rerct")
 hframes = 2
 vframes = 2
-frame = 3
 
 [node name="Cabelo" type="Sprite2D" parent="."]
 position = Vector2(-2, -235)

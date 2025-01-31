@@ -72,3 +72,4 @@ func _on_menu_roupas_valor_atualizado() -> void:
 	player.set_top(menu_roupas.val_top)
 	player.set_bottom(menu_roupas.val_bottom)
 	player.set_sapato(menu_roupas.val_sapato)
+	player.set_pele(menu_roupas.val_cor)
