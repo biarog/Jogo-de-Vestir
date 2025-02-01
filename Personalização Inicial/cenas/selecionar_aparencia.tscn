@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://6vxhyoffumf0"]
+
+[ext_resource type="Script" path="res://Personalização Inicial/scripts/selecionar_tudo_corpo.gd" id="1_gjhyh"]
+[ext_resource type="PackedScene" uid="uid://d0iy8gvd40fsb" path="res://Fases/cenas/menu_roupas.tscn" id="2_saqxi"]
+[ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Player/Cenas/corpo_1.tscn" id="3_mk5g0"]
+[ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Player/Cenas/corpo_2.tscn" id="4_16yog"]
+
+[node name="SelecionarAparencia" type="Node2D"]
+script = ExtResource("1_gjhyh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 840.0
+offset_bottom = 1080.0
+color = Color(0.515367, 0.779628, 0.78915, 1)
+
+[node name="Menu_Roupas" parent="." instance=ExtResource("2_saqxi")]
+position = Vector2(840, 0)
+flag = 1
+
+[node name="Corpo_1" parent="." instance=ExtResource("3_mk5g0")]
+position = Vector2(395, 661)
+
+[node name="Corpo_2" parent="." instance=ExtResource("4_16yog")]
+position = Vector2(396, 664)
+
+[node name="Concluido" type="Button" parent="."]
+offset_left = 1569.0
+offset_top = 938.0
+offset_right = 1659.0
+offset_bottom = 969.0
+scale = Vector2(3.66854, 3.93827)
+text = "Concluído!"
+
+[connection signal="valor_atualizado" from="Menu_Roupas" to="." method="_on_menu_roupas_valor_atualizado"]
+[connection signal="pressed" from="Concluido" to="." method="_on_concluido_pressed"]

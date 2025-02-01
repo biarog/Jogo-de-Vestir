@@ -24,3 +24,4 @@ func _on_menu_roupas_valor_atualizado() -> void:
 
 func _on_concluido_pressed() -> void:
 	dataSave.set_cor(menu_roupas.val_cor)
+	get_tree().change_scene_to_file('res://Menus/cenas/level_select_screen.tscn')
