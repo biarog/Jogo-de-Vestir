@@ -30,7 +30,7 @@ func move_screen(move_to: Vector2) -> void:
 func _on_go_right_pressed() -> void:
 	tela_atual += 1
 	var movimento : Vector2 = screen.position
-	movimento.x += 1108
+	movimento.x += 1109
 	move_screen(movimento)
 	left_btn_vis()
 	right_btn_vis()
@@ -38,7 +38,7 @@ func _on_go_right_pressed() -> void:
 func _on_go_left_pressed()  -> void:
 	tela_atual -= 1
 	var movimento : Vector2 = screen.position
-	movimento.x -= 1108
+	movimento.x -= 1109
 	move_screen(movimento)
 	left_btn_vis()
 	right_btn_vis()
