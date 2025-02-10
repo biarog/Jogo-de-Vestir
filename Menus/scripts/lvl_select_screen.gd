@@ -42,3 +42,10 @@ func _on_go_left_pressed()  -> void:
 	move_screen(movimento)
 	left_btn_vis()
 	right_btn_vis()
+
+
+func _on_back_button_pressed():
+	get_tree().change_scene_to_file("res://Menus/cenas/tela_inicio.tscn")
+
+func _on_character_select_pressed():
+	get_tree().change_scene_to_file("res://Personalização Inicial/cenas/selecionar_tipo_corpo.tscn")

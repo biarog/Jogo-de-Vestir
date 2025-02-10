@@ -100,14 +100,6 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Cabelo1" type="Button" parent="Cabelos/Cabelo1"]
-custom_minimum_size = Vector2(360, 360)
-layout_mode = 0
-icon = ExtResource("2_4v786")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
 [node name="Cabelo2" type="Button" parent="Cabelos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
@@ -334,7 +326,6 @@ layout_mode = 2
 [connection signal="pressed" from="Selecoes/Botao_sapato" to="." method="escolha_menu" binds= ["Sapatos"]]
 [connection signal="pressed" from="Selecoes/Botao_cor" to="." method="escolha_menu" binds= ["Cores"]]
 [connection signal="pressed" from="Cabelos/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
-[connection signal="pressed" from="Cabelos/Cabelo1/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
 [connection signal="pressed" from="Cabelos/Cabelo2" to="." method="escolha_cabelo" binds= [1]]
 [connection signal="pressed" from="Cabelos/Cabelo3" to="." method="escolha_cabelo" binds= [2]]
 [connection signal="pressed" from="Cabelos/Cabelo4" to="." method="escolha_cabelo" binds= [3]]

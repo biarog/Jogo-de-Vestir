@@ -2,13 +2,22 @@ extends Node2D
 
 @export_file var retorno
 
-@export var nome_tl_inicio : String
-@export var nome_tl_fim : String
+static var nome_tl_inicio : String
+static var nome_tl_fim : String
 
+@onready var dataSave = load("res://Save/player_data.gd")
 @onready var player := $Corpo_2
 
 func _ready():
 	Dialogic.start(nome_tl_inicio)
+	if(dataSave.get_corpo()==1):
+		player = $Corpo_1
+		$Corpo_2.hide()
+	else:
+		player = $Corpo_2
+		$Corpo_1.hide()
+	
+	player.set_pele(dataSave.get_cor())
 
 func sistema_avaliacao_roupas():
 	# categorias:
@@ -64,7 +73,6 @@ func sistema_avaliacao_roupas():
 		return
 	get_tree().change_scene_to_file(retorno)
 
-
 func _on_menu_roupas_valor_atualizado() -> void:
 	var menu_roupas = $Menu_Roupas
 	player.set_cabelo(menu_roupas.val_cabelo)
@@ -72,4 +80,9 @@ func _on_menu_roupas_valor_atualizado() -> void:
 	player.set_top(menu_roupas.val_top)
 	player.set_bottom(menu_roupas.val_bottom)
 	player.set_sapato(menu_roupas.val_sapato)
-	player.set_pele(menu_roupas.val_cor)
+
+static func set_intro(nome : String):
+	nome_tl_inicio = nome
+
+static func set_outro(nome : String):
+	nome_tl_fim = nome
