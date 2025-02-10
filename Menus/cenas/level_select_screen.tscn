@@ -1,7 +1,101 @@
-[gd_scene load_steps=3 format=3 uid="uid://tiqp58w64ol4"]
+[gd_scene load_steps=17 format=3 uid="uid://spv36v44ebwa"]
 
-[ext_resource type="PackedScene" uid="uid://duu18ax3r6re0" path="res://Menus/cenas/change_scene_button.tscn" id="1_glt1r"]
-[ext_resource type="Script" path="res://Menus/scripts/level_select_screen.gd" id="1_uo1cu"]
+[ext_resource type="Script" path="res://Menus/scripts/lvl_select_screen.gd" id="1_wf7tf"]
+[ext_resource type="Texture2D" uid="uid://dwtt5m1utwe60" path="res://Artes/Botoes/Fase.png" id="2_28ivr"]
+[ext_resource type="Script" path="res://Menus/scripts/level_button.gd" id="3_kd66g"]
+[ext_resource type="StyleBox" uid="uid://cd74yqyb3csw3" path="res://Artes/Styles/style_default_UI.tres" id="4_8plsh"]
+[ext_resource type="StyleBox" uid="uid://chbni2nk0hckj" path="res://Artes/Styles/style_butL_UI.tres" id="5_xl1a3"]
+[ext_resource type="StyleBox" uid="uid://vakxqdjxmf37" path="res://Artes/Styles/style_butR_UI.tres" id="6_og3jp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q6va6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rcclh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2f0rf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gkp0b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bavuf"]
+bg_color = Color(0.941176, 0.462745, 0.768627, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nxdl7"]
+bg_color = Color(0.75, 0.3675, 0.60975, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b4urt"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vy3ij"]
+bg_color = Color(0.941176, 0.462745, 0.768627, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_urtom"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_bottom_left = 35
+corner_detail = 1
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2udu"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_detail = 1
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
 
 [node name="LevelSelectScreen" type="Control"]
 layout_mode = 3
@@ -10,74 +104,266 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_uo1cu")
-dir_path = "res://Fases/cenas/levels"
+script = ExtResource("1_wf7tf")
 
-[node name="Arte" type="Node2D" parent="."]
+[node name="BackgroundColor" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -224.0
+offset_right = 3616.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.515367, 0.779628, 0.78915, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.556
+anchor_bottom = 0.556
+offset_top = -67.48
+offset_right = 5250.0
+offset_bottom = 67.52
+grow_vertical = 2
+size_flags_vertical = 6
+mouse_filter = 2
+theme_override_constants/margin_left = 885
+theme_override_constants/margin_right = 885
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="Botões" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 960
+
+[node name="Fase1Button" type="Button" parent="MarginContainer/VBoxContainer/Botões"]
+custom_minimum_size = Vector2(150, 65)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_q6va6")
+icon = ExtResource("2_28ivr")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("3_kd66g")
+
+[node name="Fase2Button" type="Button" parent="MarginContainer/VBoxContainer/Botões"]
+custom_minimum_size = Vector2(150, 65)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rcclh")
+icon = ExtResource("2_28ivr")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("3_kd66g")
+
+[node name="Fase3Button" type="Button" parent="MarginContainer/VBoxContainer/Botões"]
+custom_minimum_size = Vector2(150, 65)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f0rf")
+icon = ExtResource("2_28ivr")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("3_kd66g")
+
+[node name="Fase4Button" type="Button" parent="MarginContainer/VBoxContainer/Botões"]
+custom_minimum_size = Vector2(150, 65)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gkp0b")
+icon = ExtResource("2_28ivr")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("3_kd66g")
+
+[node name="Labels" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 6
+mouse_filter = 2
+theme_override_constants/separation = 960
+
+[node name="Fase1Label" type="Label" parent="MarginContainer/VBoxContainer/Labels"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Fase 1"
+horizontal_alignment = 1
+
+[node name="Fase2Label" type="Label" parent="MarginContainer/VBoxContainer/Labels"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Fase 2"
+horizontal_alignment = 1
+
+[node name="Fase3Label" type="Label" parent="MarginContainer/VBoxContainer/Labels"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Fase 3"
+horizontal_alignment = 1
+
+[node name="Fase4Label" type="Label" parent="MarginContainer/VBoxContainer/Labels"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
+theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Fase 4"
+horizontal_alignment = 1
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(960, 540)
-scale = Vector2(1.64, 1.64)
 
-[node name="Label" type="Label" parent="Camera"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -130.939
-offset_top = -268.585
-offset_right = 128.061
-offset_bottom = -218.585
-grow_horizontal = 2
-pivot_offset = Vector2(129.5, 25)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 36
-text = "Level Selection"
+[node name="Control" type="Control" parent="Camera"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+mouse_filter = 2
 
-[node name="MoveScreenRight" type="Button" parent="Camera"]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
+[node name="Title" type="PanelContainer" parent="Camera/Control"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 1
+anchors_preset = 10
 anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = 496.561
-offset_top = -24.5851
-offset_right = 514.561
-offset_bottom = 6.41488
+offset_bottom = 170.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bavuf")
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera/Control/Title"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 30
+
+[node name="BackButton" type="Button" parent="Camera/Control/Title/MarginContainer"]
+custom_minimum_size = Vector2(180, 110)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/hover = SubResource("StyleBoxFlat_nxdl7")
+theme_override_styles/pressed = ExtResource("4_8plsh")
+theme_override_styles/normal = ExtResource("4_8plsh")
+text = "Menu"
+
+[node name="LabelTitle" type="Label" parent="Camera/Control/Title/MarginContainer"]
+custom_minimum_size = Vector2(339, 84)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
+text = "Selecionar Nível"
+
+[node name="CharacterSelect" type="Button" parent="Camera/Control/Title/MarginContainer"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/hover = SubResource("StyleBoxFlat_b4urt")
+theme_override_styles/pressed = ExtResource("4_8plsh")
+theme_override_styles/normal = ExtResource("4_8plsh")
+text = "Personalizar
+Personagem"
+
+[node name="BottomDecor" type="PanelContainer" parent="Camera/Control"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.939815
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 45.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_vy3ij")
+metadata/_edit_use_anchors_ = true
+
+[node name="GoLeft" type="Button" parent="Camera/Control"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.535
+anchor_bottom = 0.535
+offset_left = 22.0
+offset_top = -35.8
+offset_right = 97.0
+offset_bottom = 39.2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_styles/hover = SubResource("StyleBoxFlat_urtom")
+theme_override_styles/pressed = ExtResource("5_xl1a3")
+theme_override_styles/normal = ExtResource("5_xl1a3")
+
+[node name="GoRight" type="Button" parent="Camera/Control"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.535
+anchor_right = 1.0
+anchor_bottom = 0.535
+offset_left = -95.0
+offset_top = -37.8
+offset_right = -20.0
+offset_bottom = 37.2
 grow_horizontal = 0
 grow_vertical = 2
-pivot_offset = Vector2(9, 15.5)
-text = ">"
+size_flags_horizontal = 0
+theme_override_styles/hover = SubResource("StyleBoxFlat_i2udu")
+theme_override_styles/pressed = ExtResource("6_og3jp")
+theme_override_styles/normal = ExtResource("6_og3jp")
 
-[node name="MoveScreenLeft" type="Button" parent="Camera"]
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = -516.439
-offset_top = -24.5851
-offset_right = -498.439
-offset_bottom = 6.41488
-grow_vertical = 2
-pivot_offset = Vector2(9, 15.5)
-text = "<"
-
-[node name="ReturnButton" parent="Camera" instance=ExtResource("1_glt1r")]
-offset_left = -552.439
-offset_top = -311.585
-offset_right = -471.439
-offset_bottom = -258.585
-pivot_offset = Vector2(40.5, 26.5)
-theme_override_font_sizes/font_size = 32
-text = "back"
-script = null
-
-[node name="GridLevels" type="GridContainer" parent="."]
-layout_mode = 0
-offset_left = 910.0
-offset_top = 530.0
-offset_right = 2846.0
-offset_bottom = 561.0
-theme_override_constants/h_separation = 1000
-columns = 2
-
-[connection signal="pressed" from="Camera/MoveScreenRight" to="." method="_on_move_screen_right_pressed"]
-[connection signal="pressed" from="Camera/MoveScreenLeft" to="." method="_on_move_screen_left_pressed"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/Botões/Fase1Button" to="MarginContainer/VBoxContainer/Botões/Fase1Button" method="_on_button_down"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/Botões/Fase1Button" to="MarginContainer/VBoxContainer/Botões/Fase1Button" method="_on_button_up"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/Botões/Fase1Button" to="MarginContainer/VBoxContainer/Botões/Fase1Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/VBoxContainer/Botões/Fase1Button" to="MarginContainer/VBoxContainer/Botões/Fase1Button" method="_on_mouse_exited"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/Botões/Fase2Button" to="MarginContainer/VBoxContainer/Botões/Fase2Button" method="_on_button_down"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/Botões/Fase2Button" to="MarginContainer/VBoxContainer/Botões/Fase2Button" method="_on_button_up"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/Botões/Fase3Button" to="MarginContainer/VBoxContainer/Botões/Fase3Button" method="_on_button_down"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/Botões/Fase3Button" to="MarginContainer/VBoxContainer/Botões/Fase3Button" method="_on_button_up"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/Botões/Fase4Button" to="MarginContainer/VBoxContainer/Botões/Fase4Button" method="_on_button_down"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/Botões/Fase4Button" to="MarginContainer/VBoxContainer/Botões/Fase4Button" method="_on_button_up"]
+[connection signal="pressed" from="Camera/Control/GoLeft" to="." method="_on_go_left_pressed"]
+[connection signal="pressed" from="Camera/Control/GoRight" to="." method="_on_go_right_pressed"]

@@ -58,6 +58,6 @@ offset_right = 454.393
 offset_bottom = 337.91
 flat = true
 script = ExtResource("7_ld4j3")
-scene_path = "res://Personalização Inicial/cenas/selecionar_corpo.tscn"
+scene_path = "res://Personalização Inicial/cenas/selecionar_tipo_corpo.tscn"
 
 [connection signal="pressed" from="Botão_Inicio" to="Botão_Inicio" method="_on_pressed"]
