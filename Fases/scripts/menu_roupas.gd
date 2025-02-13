@@ -1,7 +1,6 @@
 extends Node2D
 
 @export var flag := 0
-
 @export var val_cabelo := 0
 @export var val_olho := 0
 @export var val_top := 0
@@ -9,10 +8,12 @@ extends Node2D
 @export var val_sapato := 0
 @export var val_cor := 0
 
-signal valor_atualizado() #aqui ta com erro. Acho que esse sinal nao aciona nada
+signal valor_atualizado() 
 
 
 func _ready():
+	var dataSave = load("res://Save/player_data.gd")
+	#achei que tinha que aqui colocar coisas como val_olho = dataSave.get_olho() mas não funcionou :(
 	if !flag:
 		$Selecoes/Botao_cor.hide()
 	hide_all()
