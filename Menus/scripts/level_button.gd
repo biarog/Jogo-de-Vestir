@@ -5,8 +5,9 @@ func ir_para_fase(n_fase : int):
 	const scriptfase := preload("res://Fases/scripts/fase.gd")
 	var nome_intro = "Intro_Fase_" + str(n_fase)
 	var nome_fim = "Fim_Fase_" + str(n_fase)
-	scriptfase.set_intro(nome_intro)
+	
 	scriptfase.set_outro(nome_fim)
+	Dialogic.start(nome_intro)
 	get_tree().change_scene_to_file("res://Fases/cenas/fase.tscn")
 
 func _on_button_down():
