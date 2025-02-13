@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=20 format=3 uid="uid://d0iy8gvd40fsb"]
-=======
-[gd_scene load_steps=24 format=3 uid="uid://d0iy8gvd40fsb"]
->>>>>>> Stashed changes
+[gd_scene load_steps=23 format=3 uid="uid://d0iy8gvd40fsb"]
 
 [ext_resource type="Script" path="res://Fases/scripts/menu_roupas.gd" id="1_5t2ob"]
 [ext_resource type="Texture2D" uid="uid://k7ujbub0a8dh" path="res://Artes/Botoes/Cabelo1.png" id="2_4v786"]
@@ -16,15 +12,16 @@
 [ext_resource type="Texture2D" uid="uid://d3raf3cgibf67" path="res://Artes/Botoes/OlhosPretos.png" id="10_8mx42"]
 [ext_resource type="Texture2D" uid="uid://bebprb7k2p8vi" path="res://Artes/Botoes/Top_SF.png" id="11_urbj1"]
 [ext_resource type="Texture2D" uid="uid://bb108w88w5kax" path="res://Artes/Botoes/Top_SC.png" id="12_ss48n"]
+[ext_resource type="Texture2D" uid="uid://c2s7cyheo82ag" path="res://Artes/Botoes/Top_EF.png" id="13_2oywu"]
 [ext_resource type="Texture2D" uid="uid://ho7r4eqrn0de" path="res://Artes/Botoes/Top_EC.png" id="13_h45y6"]
 [ext_resource type="Texture2D" uid="uid://qhpijfpeelu4" path="res://Artes/Botoes/Bot_SF.png" id="14_dka2d"]
 [ext_resource type="Texture2D" uid="uid://crieo8ucjlb7l" path="res://Artes/Botoes/Bot_SC.png" id="15_shoyl"]
 [ext_resource type="Texture2D" uid="uid://1gt8m06hdgx3" path="res://Artes/Botoes/Bot_EC.png" id="16_381j1"]
+[ext_resource type="Texture2D" uid="uid://b8ngubcoeaa25" path="res://Artes/Botoes/Bot_EF.png" id="17_cp2wv"]
 [ext_resource type="Texture2D" uid="uid://cdnw5rljewpif" path="res://Artes/Botoes/Sap_SF.png" id="17_solpx"]
 [ext_resource type="Texture2D" uid="uid://cef8i7hicdkfa" path="res://Artes/Botoes/Sap_SC.png" id="18_ah5er"]
 [ext_resource type="Texture2D" uid="uid://cu6eqxbkh6ol8" path="res://Artes/Botoes/Sap_EC.png" id="19_cqp3b"]
-
-[sub_resource type="Theme" id="Theme_7vsoj"]
+[ext_resource type="Texture2D" uid="uid://csy7fcdljrxe" path="res://Artes/Botoes/Sap_EF.png" id="21_jboun"]
 
 [node name="Menu_Roupas" type="Node2D"]
 script = ExtResource("1_5t2ob")
@@ -98,14 +95,6 @@ columns = 2
 [node name="Cabelo1" type="Button" parent="Cabelos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
-icon = ExtResource("2_4v786")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
-[node name="Cabelo1" type="Button" parent="Cabelos/Cabelo1"]
-custom_minimum_size = Vector2(360, 360)
-layout_mode = 0
 icon = ExtResource("2_4v786")
 flat = true
 icon_alignment = 1
@@ -210,6 +199,9 @@ expand_icon = true
 [node name="Top_EF" type="Button" parent="Tops"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
+icon = ExtResource("13_2oywu")
+flat = true
+expand_icon = true
 
 [node name="Top_EC" type="Button" parent="Tops"]
 custom_minimum_size = Vector2(360, 360)
@@ -246,6 +238,9 @@ expand_icon = true
 [node name="Bot_EF" type="Button" parent="Bottoms"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
+icon = ExtResource("17_cp2wv")
+flat = true
+expand_icon = true
 
 [node name="Bot_EC" type="Button" parent="Bottoms"]
 custom_minimum_size = Vector2(360, 360)
@@ -282,6 +277,9 @@ expand_icon = true
 [node name="Sap_EF" type="Button" parent="Sapatos"]
 custom_minimum_size = Vector2(360, 360)
 layout_mode = 2
+icon = ExtResource("21_jboun")
+flat = true
+expand_icon = true
 
 [node name="Sap_EC" type="Button" parent="Sapatos"]
 custom_minimum_size = Vector2(360, 360)
@@ -291,23 +289,16 @@ flat = true
 expand_icon = true
 
 [node name="Cores" type="GridContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 221.0
-offset_top = 250.0
-offset_right = 254.0
-offset_bottom = 285.0
-grow_horizontal = 2
-grow_vertical = 2
+visible = false
+offset_left = 219.0
+offset_top = 222.0
+offset_right = 452.0
+offset_bottom = 363.0
 scale = Vector2(20, 20)
 columns = 3
 
 [node name="0" type="Button" parent="Cores"]
 layout_mode = 2
-theme = SubResource("Theme_7vsoj")
 
 [node name="1" type="Button" parent="Cores"]
 layout_mode = 2
@@ -337,7 +328,6 @@ layout_mode = 2
 [connection signal="pressed" from="Selecoes/Botao_sapato" to="." method="escolha_menu" binds= ["Sapatos"]]
 [connection signal="pressed" from="Selecoes/Botao_cor" to="." method="escolha_menu" binds= ["Cores"]]
 [connection signal="pressed" from="Cabelos/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
-[connection signal="pressed" from="Cabelos/Cabelo1/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
 [connection signal="pressed" from="Cabelos/Cabelo2" to="." method="escolha_cabelo" binds= [1]]
 [connection signal="pressed" from="Cabelos/Cabelo3" to="." method="escolha_cabelo" binds= [2]]
 [connection signal="pressed" from="Cabelos/Cabelo4" to="." method="escolha_cabelo" binds= [3]]

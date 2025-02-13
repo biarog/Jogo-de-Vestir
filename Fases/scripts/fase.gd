@@ -2,13 +2,21 @@ extends Node2D
 
 @export_file var retorno
 
-@export var nome_tl_inicio : String
-@export var nome_tl_fim : String
+static var nome_tl_fim : String
 
 @onready var player := $Corpo_2
 
 func _ready():
-	Dialogic.start(nome_tl_inicio)
+	var dataSave = load("res://Save/player_data.gd")
+	if(dataSave.get_corpo()==1):
+		player = $Corpo_1
+		$Corpo_2.hide()
+	else:
+		player = $Corpo_2
+		$Corpo_1.hide()
+	
+	player.set_pele(dataSave.get_cor())
+	player.set_cabelo(dataSave.get_cabelo())
 
 func sistema_avaliacao_roupas():
 	# categorias:
@@ -23,6 +31,7 @@ func sistema_avaliacao_roupas():
 		
 	var categoria_se = Dialogic.VAR.categoria_se
 	var categoria_fc = Dialogic.VAR.categoria_fc
+	
 	var pontuacao := 0
 	
 	if (categoria_se == 0): #simples
@@ -64,12 +73,21 @@ func sistema_avaliacao_roupas():
 		return
 	get_tree().change_scene_to_file(retorno)
 
-
-func _on_menu_roupas_valor_atualizado() -> void:
+func _on_menu_roupas_valor_atualizado(val:int) -> void:
 	var menu_roupas = $Menu_Roupas
-	player.set_cabelo(menu_roupas.val_cabelo)
-	player.set_olho(menu_roupas.val_olho)
-	player.set_top(menu_roupas.val_top)
-	player.set_bottom(menu_roupas.val_bottom)
-	player.set_sapato(menu_roupas.val_sapato)
-	player.set_pele(menu_roupas.val_cor)
+	match(val):
+		0:
+			player.set_cabelo(menu_roupas.val_cabelo)
+		1:
+			player.set_olho(menu_roupas.val_olho)
+		2:
+			player.set_top(menu_roupas.val_top)
+		3:
+			player.set_bottom(menu_roupas.val_bottom)
+		4:
+			player.set_sapato(menu_roupas.val_sapato)
+		5:
+			player.set_pele(menu_roupas.val_cor)
+
+static func set_outro(nome : String):
+	nome_tl_fim = nome

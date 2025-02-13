@@ -17,6 +17,13 @@ scale = Vector2(0.281, 0.281)
 texture = ExtResource("1_lv80w")
 hframes = 8
 
+[node name="Sapato" type="Sprite2D" parent="."]
+position = Vector2(0, 277)
+scale = Vector2(0.281, 0.281)
+texture = ExtResource("5_r3sxy")
+hframes = 2
+vframes = 2
+
 [node name="Olho" type="Sprite2D" parent="."]
 position = Vector2(-2, -299)
 scale = Vector2(0.086712, 0.086712)
@@ -25,14 +32,14 @@ hframes = 2
 vframes = 3
 
 [node name="Bottom" type="Sprite2D" parent="."]
-position = Vector2(-1, 6.99998)
+position = Vector2(3, 128)
 scale = Vector2(0.281, 0.281)
 texture = ExtResource("4_qpfo7")
 hframes = 2
 vframes = 2
 
 [node name="Top" type="Sprite2D" parent="."]
-position = Vector2(-1, -131)
+position = Vector2(-2, -135)
 scale = Vector2(0.281023, 0.281023)
 texture = ExtResource("3_thf4i")
 hframes = 2
@@ -42,12 +49,5 @@ vframes = 2
 position = Vector2(-2, -234)
 scale = Vector2(0.271904, 0.271904)
 texture = ExtResource("6_yi55v")
-hframes = 2
-vframes = 2
-
-[node name="Sapato" type="Sprite2D" parent="."]
-position = Vector2(0, 277)
-scale = Vector2(0.281, 0.281)
-texture = ExtResource("5_r3sxy")
 hframes = 2
 vframes = 2
