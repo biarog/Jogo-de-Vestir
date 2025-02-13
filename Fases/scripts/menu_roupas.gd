@@ -9,10 +9,19 @@ extends Node2D
 @export var val_sapato := 0
 @export var val_cor := 0
 
-signal valor_atualizado() #aqui ta com erro. Acho que esse sinal nao aciona nada
+signal valor_atualizado() 
 
 
 func _ready():
+	#achei que isso resolveria a questão do save, mas não resolveu:
+	var player_data = load("res://Save/player_data.gd")
+	self.val_cabelo = player_data.get_cabelo()
+	self.val_top = player_data.get_top() 
+	self.val_bottom = player_data.get_bottom() 
+	self.val_sapato = player_data.get_sapato() 
+	self.val_olho = player_data.get_olho() 
+	self.val_cor = player_data.get_cor() 
+	 
 	if !flag:
 		$Selecoes/Botao_cor.hide()
 	hide_all()

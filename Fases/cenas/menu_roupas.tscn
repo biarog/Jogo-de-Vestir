@@ -289,10 +289,12 @@ flat = true
 expand_icon = true
 
 [node name="Cores" type="GridContainer" parent="."]
+visible = false
 offset_left = 219.0
 offset_top = 222.0
 offset_right = 452.0
 offset_bottom = 363.0
+scale = Vector2(20, 20)
 columns = 3
 
 [node name="0" type="Button" parent="Cores"]
