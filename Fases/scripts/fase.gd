@@ -3,20 +3,21 @@ extends Node2D
 @export_file var retorno
 
 static var nome_tl_fim : String
+static var n_fase : int
 
 @onready var player := $Corpo_2
 
 func _ready():
-	var dataSave = load("res://Save/player_data.gd")
-	if(dataSave.get_corpo()==1):
+	var playerData = preload("res://Save/player_data.gd")
+	if(playerData.get_corpo()==1):
 		player = $Corpo_1
 		$Corpo_2.hide()
 	else:
 		player = $Corpo_2
 		$Corpo_1.hide()
 	
-	player.set_pele(dataSave.get_cor())
-	player.set_cabelo(dataSave.get_cabelo())
+	player.set_pele(playerData.get_cor())
+	player.set_cabelo(playerData.get_cabelo())
 
 func sistema_avaliacao_roupas():
 	# categorias:
@@ -89,5 +90,12 @@ func _on_menu_roupas_valor_atualizado(val:int) -> void:
 		5:
 			player.set_pele(menu_roupas.val_cor)
 
+func desbloquear_prox():
+	var saveData = preload("res://Save/save_data.gd")
+	saveData.unlock_lvl(n_fase)
+
 static func set_outro(nome : String):
 	nome_tl_fim = nome
+
+static func set_n_fase(val : int):
+	n_fase = val

@@ -155,6 +155,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 script = ExtResource("3_kd66g")
+botao_fase = true
 
 [node name="Fase2Button" type="Button" parent="MarginContainer/VBoxContainer/Botões"]
 custom_minimum_size = Vector2(150, 65)
@@ -170,6 +171,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 script = ExtResource("3_kd66g")
+botao_fase = true
 
 [node name="Fase3Button" type="Button" parent="MarginContainer/VBoxContainer/Botões"]
 custom_minimum_size = Vector2(150, 65)
@@ -185,6 +187,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 script = ExtResource("3_kd66g")
+botao_fase = true
 
 [node name="Fase4Button" type="Button" parent="MarginContainer/VBoxContainer/Botões"]
 custom_minimum_size = Vector2(150, 65)
@@ -200,6 +203,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 script = ExtResource("3_kd66g")
+botao_fase = true
 
 [node name="Labels" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

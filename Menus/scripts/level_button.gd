@@ -1,5 +1,6 @@
 extends Button
 
+@export var botao_fase : bool
 
 func ir_para_fase(n_fase : int):
 	const scriptfase := preload("res://Fases/scripts/fase.gd")
@@ -10,9 +11,18 @@ func ir_para_fase(n_fase : int):
 	Dialogic.start(nome_intro)
 	get_tree().change_scene_to_file("res://Fases/cenas/fase.tscn")
 
+func ir_para_vn(n_vn : int):
+	pass
+
 func _on_button_down():
-	self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Fase_Pressed.png"))
+	if botao_fase:
+		self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Fase_Pressed.png"))
+	else:
+		pass
 
 func _on_button_up(val: int):
-	self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Fase.png"))
-	ir_para_fase(val)
+	if botao_fase:
+		self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Fase.png"))
+		ir_para_fase(val)
+	else:
+		ir_para_vn(val)
