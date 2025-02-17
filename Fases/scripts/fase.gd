@@ -68,6 +68,10 @@ func sistema_avaliacao_roupas():
 			pontuacao = pontuacao+1
 	
 	Dialogic.VAR.pontuacao = pontuacao
+	
+	if pontuacao == 6:
+		desbloquear_prox()
+	
 	Dialogic.start(nome_tl_fim)
 	
 	if retorno == null:
