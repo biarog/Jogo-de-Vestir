@@ -14,7 +14,6 @@ offset_bottom = 1080.0
 color = Color(0.515367, 0.779628, 0.78915, 1)
 
 [node name="PainelSelecao" type="PanelContainer" parent="."]
-anchors_preset = -1
 offset_left = 187.0
 offset_top = 72.0
 offset_right = 1734.0
