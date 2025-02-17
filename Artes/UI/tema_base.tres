@@ -1,0 +1,68 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://dbo686lfpp6fo"]
+
+[ext_resource type="StyleBox" uid="uid://bvb3pcyshcry2" path="res://Artes/UI/Styles/style_botoes_menu_roupas.tres" id="1_qdtoo"]
+[ext_resource type="StyleBox" uid="uid://cd74yqyb3csw3" path="res://Artes/UI/Styles/style_default_UI.tres" id="2_4mjsp"]
+[ext_resource type="FontFile" uid="uid://cvdg2b2exavxj" path="res://Artes/UI/Pulang.ttf" id="2_em85r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ak1yy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3785"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exadq"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1u31"]
+bg_color = Color(0.941176, 0.462745, 0.768627, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[resource]
+default_font = ExtResource("2_em85r")
+default_font_size = 36
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 56
+Button/styles/disabled = ExtResource("1_qdtoo")
+Button/styles/focus = SubResource("StyleBoxEmpty_ak1yy")
+Button/styles/hover = SubResource("StyleBoxFlat_q3785")
+Button/styles/normal = ExtResource("1_qdtoo")
+Button/styles/pressed = SubResource("StyleBoxFlat_exadq")
+Panel/styles/panel = SubResource("StyleBoxFlat_x1u31")
+PanelContainer/styles/panel = ExtResource("2_4mjsp")
