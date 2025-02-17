@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kidwuo1ahqjd"
-path="res://.godot/imported/corpo 1 rosinha.png-24bd9ce4f4592338ca5bd11635729442.ctex"
+uid="uid://dh6qa7n7fktcd"
+path="res://.godot/imported/corpo 2 rosinha.png-456e03ff75919f8866e8a73cccfd853e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Corpos Rosinhas/corpo 1 rosinha.png"
-dest_files=["res://.godot/imported/corpo 1 rosinha.png-24bd9ce4f4592338ca5bd11635729442.ctex"]
+source_file="res://Artes/Aparencia/Corpo2/corpo 2 rosinha.png"
+dest_files=["res://.godot/imported/corpo 2 rosinha.png-456e03ff75919f8866e8a73cccfd853e.ctex"]
 
 [params]
 
