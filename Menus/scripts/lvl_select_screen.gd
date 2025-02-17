@@ -4,7 +4,7 @@ extends Control
 @onready var btn_right = $Camera/Control/GoRight
 @onready var btn_left = $Camera/Control/GoLeft
 
-var qnt_levels := 4
+var qnt_levels := 10
 var tela_atual := 1
 
 func left_btn_vis():
@@ -48,4 +48,4 @@ func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://Menus/cenas/tela_inicio.tscn")
 
 func _on_character_select_pressed():
-	get_tree().change_scene_to_file("res://Personalização Inicial/cenas/selecionar_tipo_corpo.tscn")
+	get_tree().change_scene_to_file("res://Menus/cenas/selecionar_tipo_corpo.tscn")

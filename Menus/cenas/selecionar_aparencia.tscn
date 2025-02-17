@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://6vxhyoffumf0"]
 
-[ext_resource type="Script" path="res://Personalização Inicial/scripts/selecionar_tudo_corpo.gd" id="1_gjhyh"]
+[ext_resource type="Script" path="res://Menus/scripts/selecionar_tudo_corpo.gd" id="1_gjhyh"]
 [ext_resource type="PackedScene" uid="uid://d0iy8gvd40fsb" path="res://Fases/cenas/menu_roupas.tscn" id="2_saqxi"]
 [ext_resource type="PackedScene" uid="uid://b3lbcwsw0uigv" path="res://Player/Cenas/corpo_1.tscn" id="3_mk5g0"]
 [ext_resource type="PackedScene" uid="uid://bdlh576kwk7e6" path="res://Player/Cenas/corpo_2.tscn" id="4_16yog"]
