@@ -12,22 +12,23 @@ extends Node2D
 signal valor_atualizado(val:int) 
 
 
-func _ready():	 
+func _ready(): 
 	if !flag:
-		$Selecoes/Botao_cor.hide()
-	hide_all()
+		$Fundo/Selecoes/Botao_cor.hide()
+	hide_all_selections()
 
-func hide_all():
-	$Cabelos.hide()
-	$Olhos.hide()
-	$Tops.hide()
-	$Bottoms.hide()
-	$Sapatos.hide()
-	$Cores.hide()
+func hide_all_selections():
+	$Fundo/Cabelos.hide()
+	$Fundo/Olhos.hide()
+	$Fundo/Tops.hide()
+	$Fundo/Bottoms.hide()
+	$Fundo/Sapatos.hide()
+	$Fundo/Cores.hide()
 	
 func escolha_menu(nome:String):
-	hide_all()
-	var nodulo := find_child(nome)
+	hide_all_selections()
+	var background = $Fundo
+	var nodulo := background.find_child(nome)
 	nodulo.show()
 
 func escolha_cabelo(val:int):

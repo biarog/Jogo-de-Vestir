@@ -1,0 +1,342 @@
+[gd_scene load_steps=25 format=3 uid="uid://d0iy8gvd40fsb"]
+
+[ext_resource type="Script" path="res://Fases/scripts/menu_roupas.gd" id="1_5t2ob"]
+[ext_resource type="Texture2D" uid="uid://k7ujbub0a8dh" path="res://Artes/Botoes/Cabelo1.png" id="2_4v786"]
+[ext_resource type="StyleBox" path="res://Artes/UI/style_botoes_menu_roupas.tres" id="2_nk25a"]
+[ext_resource type="Theme" uid="uid://dbo686lfpp6fo" path="res://Artes/UI/tema_base.tres" id="3_8opgu"]
+[ext_resource type="Texture2D" uid="uid://dltc23krir1a7" path="res://Artes/Botoes/Cabelo2.png" id="3_c66ls"]
+[ext_resource type="Texture2D" uid="uid://bq7mwisglw6e6" path="res://Artes/Botoes/Cabelo3.png" id="4_e57r8"]
+[ext_resource type="Texture2D" uid="uid://buxk4w5kqywxw" path="res://Artes/Botoes/OlhosVerdes.png" id="5_d2c8m"]
+[ext_resource type="Texture2D" uid="uid://cc6k8niy46c3u" path="res://Artes/Botoes/OlhosAzuis.png" id="6_6hcc1"]
+[ext_resource type="Texture2D" uid="uid://bionvy4fvs13u" path="res://Artes/Botoes/OlhosCastanhos.png" id="7_px3m8"]
+[ext_resource type="Texture2D" uid="uid://bcl0b8gaf8ne3" path="res://Artes/Botoes/OlhosRosas.png" id="8_t2mhm"]
+[ext_resource type="Texture2D" uid="uid://cjrxq2b2va5o5" path="res://Artes/Botoes/OlhosRoxos.png" id="9_gqx32"]
+[ext_resource type="Texture2D" uid="uid://d3raf3cgibf67" path="res://Artes/Botoes/OlhosPretos.png" id="10_8mx42"]
+[ext_resource type="Texture2D" uid="uid://bebprb7k2p8vi" path="res://Artes/Botoes/Top_SF.png" id="11_urbj1"]
+[ext_resource type="Texture2D" uid="uid://bb108w88w5kax" path="res://Artes/Botoes/Top_SC.png" id="12_ss48n"]
+[ext_resource type="Texture2D" uid="uid://c2s7cyheo82ag" path="res://Artes/Botoes/Top_EF.png" id="13_2oywu"]
+[ext_resource type="Texture2D" uid="uid://ho7r4eqrn0de" path="res://Artes/Botoes/Top_EC.png" id="13_h45y6"]
+[ext_resource type="Texture2D" uid="uid://qhpijfpeelu4" path="res://Artes/Botoes/Bot_SF.png" id="14_dka2d"]
+[ext_resource type="Texture2D" uid="uid://crieo8ucjlb7l" path="res://Artes/Botoes/Bot_SC.png" id="15_shoyl"]
+[ext_resource type="Texture2D" uid="uid://1gt8m06hdgx3" path="res://Artes/Botoes/Bot_EC.png" id="16_381j1"]
+[ext_resource type="Texture2D" uid="uid://b8ngubcoeaa25" path="res://Artes/Botoes/Bot_EF.png" id="17_cp2wv"]
+[ext_resource type="Texture2D" uid="uid://cdnw5rljewpif" path="res://Artes/Botoes/Sap_SF.png" id="17_solpx"]
+[ext_resource type="Texture2D" uid="uid://cef8i7hicdkfa" path="res://Artes/Botoes/Sap_SC.png" id="18_ah5er"]
+[ext_resource type="Texture2D" uid="uid://cu6eqxbkh6ol8" path="res://Artes/Botoes/Sap_EC.png" id="19_cqp3b"]
+[ext_resource type="Texture2D" uid="uid://csy7fcdljrxe" path="res://Artes/Botoes/Sap_EF.png" id="21_jboun"]
+
+[node name="Menu_Roupas" type="Node2D"]
+script = ExtResource("1_5t2ob")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1081.0
+offset_bottom = 1080.0
+color = Color(0.941176, 0.462745, 0.768627, 1)
+
+[node name="Selecoes" type="GridContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 331.0
+offset_top = 90.0
+offset_right = 674.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.829, 2.829)
+pivot_offset = Vector2(151.961, 15.4246)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 6
+
+[node name="Botao_cabelo" type="Button" parent="Selecoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("2_nk25a")
+text = "Cabelo"
+
+[node name="Botao_olho" type="Button" parent="Selecoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/focus = ExtResource("2_nk25a")
+theme_override_styles/hover = ExtResource("2_nk25a")
+theme_override_styles/pressed = ExtResource("2_nk25a")
+theme_override_styles/normal = ExtResource("2_nk25a")
+text = "Olhos"
+
+[node name="Botao_top" type="Button" parent="Selecoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/focus = ExtResource("2_nk25a")
+theme_override_styles/hover = ExtResource("2_nk25a")
+theme_override_styles/pressed = ExtResource("2_nk25a")
+theme_override_styles/normal = ExtResource("2_nk25a")
+text = "Top"
+
+[node name="Botao_bottom" type="Button" parent="Selecoes"]
+layout_mode = 2
+theme = ExtResource("3_8opgu")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/focus = ExtResource("2_nk25a")
+theme_override_styles/hover = ExtResource("2_nk25a")
+theme_override_styles/pressed = ExtResource("2_nk25a")
+theme_override_styles/normal = ExtResource("2_nk25a")
+text = "Bottom"
+
+[node name="Botao_sapato" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Sapatos"
+
+[node name="Botao_cor" type="Button" parent="Selecoes"]
+layout_mode = 2
+text = "Cor"
+
+[node name="Cabelos" type="GridContainer" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 157.0
+offset_top = 193.0
+offset_right = 927.0
+offset_bottom = 963.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(385, 385)
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 2
+
+[node name="Cabelo1" type="Button" parent="Cabelos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("2_4v786")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Cabelo2" type="Button" parent="Cabelos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("3_c66ls")
+flat = true
+expand_icon = true
+
+[node name="Cabelo3" type="Button" parent="Cabelos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("4_e57r8")
+flat = true
+expand_icon = true
+
+[node name="Cabelo4" type="Button" parent="Cabelos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+
+[node name="Olhos" type="GridContainer" parent="."]
+visible = false
+offset_left = 165.0
+offset_top = 250.0
+offset_right = 925.0
+offset_bottom = 910.0
+pivot_offset = Vector2(16, 16)
+theme_override_constants/h_separation = 75
+theme_override_constants/v_separation = 60
+columns = 2
+
+[node name="Verde" type="Button" parent="Olhos"]
+custom_minimum_size = Vector2(330, 180)
+layout_mode = 2
+icon = ExtResource("5_d2c8m")
+flat = true
+expand_icon = true
+
+[node name="Azul" type="Button" parent="Olhos"]
+custom_minimum_size = Vector2(330, 180)
+layout_mode = 2
+icon = ExtResource("6_6hcc1")
+flat = true
+expand_icon = true
+
+[node name="Castanho" type="Button" parent="Olhos"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+icon = ExtResource("7_px3m8")
+flat = true
+expand_icon = true
+
+[node name="Rosa" type="Button" parent="Olhos"]
+custom_minimum_size = Vector2(240, 180)
+layout_mode = 2
+icon = ExtResource("8_t2mhm")
+flat = true
+expand_icon = true
+
+[node name="Roxo" type="Button" parent="Olhos"]
+custom_minimum_size = Vector2(240, 180)
+layout_mode = 2
+icon = ExtResource("9_gqx32")
+flat = true
+expand_icon = true
+
+[node name="Preto" type="Button" parent="Olhos"]
+custom_minimum_size = Vector2(240, 120)
+layout_mode = 2
+icon = ExtResource("10_8mx42")
+flat = true
+expand_icon = true
+
+[node name="Tops" type="GridContainer" parent="."]
+visible = false
+offset_left = 157.0
+offset_top = 193.0
+offset_right = 927.0
+offset_bottom = 963.0
+pivot_offset = Vector2(10, 10)
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 2
+
+[node name="Top_SF" type="Button" parent="Tops"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("11_urbj1")
+flat = true
+expand_icon = true
+
+[node name="Top_SC" type="Button" parent="Tops"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("12_ss48n")
+flat = true
+expand_icon = true
+
+[node name="Top_EF" type="Button" parent="Tops"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("13_2oywu")
+flat = true
+expand_icon = true
+
+[node name="Top_EC" type="Button" parent="Tops"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("13_h45y6")
+flat = true
+expand_icon = true
+
+[node name="Bottoms" type="GridContainer" parent="."]
+visible = false
+offset_left = 157.0
+offset_top = 193.0
+offset_right = 927.0
+offset_bottom = 963.0
+pivot_offset = Vector2(10, 10)
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 2
+
+[node name="Bot_SF" type="Button" parent="Bottoms"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("14_dka2d")
+flat = true
+expand_icon = true
+
+[node name="Bot_SC" type="Button" parent="Bottoms"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("15_shoyl")
+flat = true
+expand_icon = true
+
+[node name="Bot_EF" type="Button" parent="Bottoms"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("17_cp2wv")
+flat = true
+expand_icon = true
+
+[node name="Bot_EC" type="Button" parent="Bottoms"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("16_381j1")
+flat = true
+expand_icon = true
+
+[node name="Sapatos" type="GridContainer" parent="."]
+visible = false
+offset_left = 157.0
+offset_top = 193.0
+offset_right = 927.0
+offset_bottom = 963.0
+pivot_offset = Vector2(10, 10)
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 2
+
+[node name="Sap_SF" type="Button" parent="Sapatos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("17_solpx")
+flat = true
+expand_icon = true
+
+[node name="Sap_SC" type="Button" parent="Sapatos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("18_ah5er")
+flat = true
+expand_icon = true
+
+[node name="Sap_EF" type="Button" parent="Sapatos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("21_jboun")
+flat = true
+expand_icon = true
+
+[node name="Sap_EC" type="Button" parent="Sapatos"]
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 2
+icon = ExtResource("19_cqp3b")
+flat = true
+expand_icon = true
+
+[node name="Cores" type="GridContainer" parent="."]
+visible = false
+offset_left = 219.0
+offset_top = 222.0
+offset_right = 452.0
+offset_bottom = 363.0
+scale = Vector2(20, 20)
+columns = 3
+
+[node name="0" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="1" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="2" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="3" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="4" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="5" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="6" type="Button" parent="Cores"]
+layout_mode = 2
+
+[node name="7" type="Button" parent="Cores"]
+layout_mode = 2

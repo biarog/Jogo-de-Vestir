@@ -1,11 +1,12 @@
-[gd_scene load_steps=17 format=3 uid="uid://spv36v44ebwa"]
+[gd_scene load_steps=24 format=3 uid="uid://spv36v44ebwa"]
 
 [ext_resource type="Script" path="res://Menus/scripts/lvl_select_screen.gd" id="1_wf7tf"]
 [ext_resource type="Texture2D" uid="uid://dwtt5m1utwe60" path="res://Artes/Botoes/Fase.png" id="2_28ivr"]
 [ext_resource type="Script" path="res://Menus/scripts/level_button.gd" id="3_kd66g"]
-[ext_resource type="StyleBox" uid="uid://cd74yqyb3csw3" path="res://Artes/Styles/style_default_UI.tres" id="4_8plsh"]
-[ext_resource type="StyleBox" uid="uid://chbni2nk0hckj" path="res://Artes/Styles/style_butL_UI.tres" id="5_xl1a3"]
-[ext_resource type="StyleBox" uid="uid://vakxqdjxmf37" path="res://Artes/Styles/style_butR_UI.tres" id="6_og3jp"]
+[ext_resource type="Theme" uid="uid://dbo686lfpp6fo" path="res://Artes/UI/tema_base.tres" id="4_4rhi4"]
+[ext_resource type="StyleBox" uid="uid://cd74yqyb3csw3" path="res://Artes/UI/Styles/style_default_UI.tres" id="4_8plsh"]
+[ext_resource type="StyleBox" uid="uid://chbni2nk0hckj" path="res://Artes/UI/Styles/style_butL_UI.tres" id="5_xl1a3"]
+[ext_resource type="StyleBox" uid="uid://vakxqdjxmf37" path="res://Artes/UI/Styles/style_butR_UI.tres" id="6_og3jp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q6va6"]
 
@@ -41,7 +42,7 @@ expand_margin_top = 5.0
 expand_margin_right = 5.0
 expand_margin_bottom = 5.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b4urt"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ketqt"]
 bg_color = Color(0.74902, 0.368627, 0.607843, 1)
 border_width_left = 10
 border_width_top = 10
@@ -52,10 +53,30 @@ corner_radius_top_left = 35
 corner_radius_top_right = 35
 corner_radius_bottom_right = 35
 corner_radius_bottom_left = 35
-expand_margin_left = 5.0
-expand_margin_top = 5.0
-expand_margin_right = 5.0
-expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7egwo"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyswt"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vy3ij"]
 bg_color = Color(0.941176, 0.462745, 0.768627, 1)
@@ -66,6 +87,8 @@ border_width_bottom = 10
 border_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 35
 corner_radius_top_right = 35
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_36rso"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_urtom"]
 bg_color = Color(0.74902, 0.368627, 0.607843, 1)
@@ -82,6 +105,19 @@ expand_margin_top = 3.0
 expand_margin_right = 3.0
 expand_margin_bottom = 3.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ym5uf"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 35
+corner_radius_bottom_left = 35
+corner_detail = 1
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o56yn"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2udu"]
 bg_color = Color(0.74902, 0.368627, 0.607843, 1)
 border_width_left = 10
@@ -97,6 +133,17 @@ expand_margin_top = 3.0
 expand_margin_right = 3.0
 expand_margin_bottom = 3.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qlya6"]
+bg_color = Color(0.74902, 0.368627, 0.607843, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_detail = 1
+
 [node name="LevelSelectScreen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -104,6 +151,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_4rhi4")
 script = ExtResource("1_wf7tf")
 
 [node name="BackgroundColor" type="ColorRect" parent="."]
@@ -210,6 +258,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 6
 mouse_filter = 2
+theme = ExtResource("4_4rhi4")
 theme_override_constants/separation = 960
 
 [node name="Fase1Label" type="Label" parent="MarginContainer/VBoxContainer/Labels"]
@@ -276,6 +325,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_bavuf")
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera/Control/Title"]
 layout_mode = 2
+theme = ExtResource("4_4rhi4")
 theme_override_constants/margin_left = 30
 theme_override_constants/margin_right = 30
 
@@ -286,8 +336,9 @@ size_flags_horizontal = 0
 size_flags_vertical = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 42
+theme_override_styles/focus = ExtResource("4_8plsh")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nxdl7")
-theme_override_styles/pressed = ExtResource("4_8plsh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ketqt")
 theme_override_styles/normal = ExtResource("4_8plsh")
 text = "Menu"
 
@@ -305,8 +356,9 @@ size_flags_horizontal = 8
 size_flags_vertical = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 37
-theme_override_styles/hover = SubResource("StyleBoxFlat_b4urt")
-theme_override_styles/pressed = ExtResource("4_8plsh")
+theme_override_styles/focus = ExtResource("4_8plsh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7egwo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gyswt")
 theme_override_styles/normal = ExtResource("4_8plsh")
 text = "Personalizar
 Personagem"
@@ -336,8 +388,9 @@ offset_right = 97.0
 offset_bottom = 39.2
 grow_vertical = 2
 size_flags_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_36rso")
 theme_override_styles/hover = SubResource("StyleBoxFlat_urtom")
-theme_override_styles/pressed = ExtResource("5_xl1a3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ym5uf")
 theme_override_styles/normal = ExtResource("5_xl1a3")
 
 [node name="GoRight" type="Button" parent="Camera/Control"]
@@ -355,8 +408,9 @@ offset_bottom = 37.2
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o56yn")
 theme_override_styles/hover = SubResource("StyleBoxFlat_i2udu")
-theme_override_styles/pressed = ExtResource("6_og3jp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qlya6")
 theme_override_styles/normal = ExtResource("6_og3jp")
 
 [connection signal="button_down" from="MarginContainer/VBoxContainer/Botões/Fase1Button" to="MarginContainer/VBoxContainer/Botões/Fase1Button" method="_on_button_down"]

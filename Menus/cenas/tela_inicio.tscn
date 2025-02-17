@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dthexq6mm334l"]
+[gd_scene load_steps=9 format=3 uid="uid://dthexq6mm334l"]
 
 [ext_resource type="Script" path="res://Menus/scripts/tela_inicio.gd" id="1_d068f"]
 [ext_resource type="Texture2D" uid="uid://0f7kntreqxpt" path="res://Artes/WhatsApp Image 2024-11-29 at 13.41.02.jpeg" id="1_kyy7o"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cl3787bgl0wft" path="res://Artes/129 Sem Título_20241129133859.png" id="4_idr4e"]
 [ext_resource type="Texture2D" uid="uid://dpuegufts8ibm" path="res://Artes/130 Sem Título_20241129143343.png" id="5_fwbyl"]
 [ext_resource type="Texture2D" uid="uid://b5ejp4w228ray" path="res://Artes/130 Sem Título_20241129143553.png" id="6_i1p1r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jyglb"]
 
 [node name="tela inicio" type="Node2D"]
 position = Vector2(304, 142)
@@ -57,6 +59,7 @@ offset_left = 194.393
 offset_top = 277.91
 offset_right = 454.393
 offset_bottom = 337.91
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jyglb")
 flat = true
 
 [connection signal="pressed" from="BotaoInicio" to="." method="_on_botao_inicio_pressed"]
