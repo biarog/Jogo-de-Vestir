@@ -1,5 +1,32 @@
 [background arg="res://Artes/background1.png" fade="0.0"]
 Costurete: (Acho que a minha roupa combinou muito com o tema! Ficou exatamente do jeitinho que eu queria! Vou arrasar!)
+Costurete: (Assim que terminei de montar meu look, minha visão capturou Gabriela no outro extremo do estúdio, ao contrário do que eu estava acostumada a ver, ela não tinha um sorriso no rosto.)
+Costurete: (Gabriela tinha tecidos coloridos e estampados ao seu redor, sua bancada criava um completo caos, mas seu manequim estava vazio.)
+Costurete: (Observando um pouco mais, eu conseguia ver um semblante cheio de preocupação e confusão. Acho que eu deveria ver o que está acontecendo, meu trabalho já está feito, de qualquer forma.)
+Costurete: (Ando até Gabriela, mas ela parece tão perdida em seus pensamentos que nem nota minha presença.)
+Costurete: Gabriela? O que houve?
+Costurete: (A garota de cabelos cor de rosa dá um pulo antes de se virar para falar comigo.)
+"Gabriela Martins": O-oi, Costurete! O que está fazendo aqui?
+Costurete: Já terminei meu conjunto! Você parecia meio perturbada, então vim ver o que estava acontecendo.
+"Gabriela Martins": A-ah, sim, eu… é que…
+Costurete: (Ela hesita um pouco ao falar, consigo perceber que está nervosa.)
+"Gabriela Martins": Eu não estou conseguindo criar nada adequado. Não tenho nenhuma inspiração e o tempo só está passando!
+Costurete: (Ah, problemas criativos. Será que eu devo tentar ajudar? Mas ela é minha concorrente, acho que seria muito arriscado! O que devo fazer agora?)
+# Precisa pontuar
+- (O que eu estou pensando? Isso é uma competição! Eu não deveria ajudá-la!)
+	Costurete: Você nem consegue criar um conjunto decente para esse tipo de tema? O que você veio fazer nessa competição, então?
+	Costurete: Parece que vencer vai ser mais fácil do que pensei, minhas concorrentes são de uma categoria tão inferior à minha.
+	Costurete: (Assim que termino de falar, viro-me para voltar ao meu lugar, nem me dou ao trabalho de ver a expressão que Gabriela fez após ouvir minhas palavras.)
+	(Não vim até aqui para ser boazinha com outras competidoras! Meu foco é vencer!)
+- (Que bobeira que estou pensando? Gabriela é tão gentil, não faz mal ajudá-la um pouco!)
+	Costurete: (Tenho certeza que ela faria o mesmo por mim, se eu precisasse!)
+	Costurete: Sabe o que me ajuda quando não tenho inspirações? Pensar que estou vestindo uma pessoa famosa que eu admiro muito!
+	"Gabriela Martins": M-mesmo? Como posso fazer isso?
+	Costurete: Só pensa comigo\: se você pudesse vestir qualquer pessoa influente para uma almoço de negócios, quem seria? Você escolheria uma empresária? Uma atriz famosa? Uma grande cantora?
+	"Gabriela Martins": Ah! Talvez… Maril Estribe! Eu gostei muito dela em Lúcifer veste Bucci! Uma mistura do clássico de alfaiataria com um toque moderno! Acho que sei o que fazer!
+	"Gabriela Martins": Obrigada, Costurete!
+	Costurete: (Eu sorrio com o agradecimento, sinto-me realizada de ter conseguido ajudar Gabriela. Volto ao meu lugar com uma sensação de dever cumprido!)
+Costurete: (O tempo finalmente terminou! Agora já é hora das notas e feedbacks!)
 Costurete: (Olho receosa entre os jurados, minhas mãos fortemente entrelaçadas à frente de meu corpo. Torço para que eles me avaliem bem!)
 if {pontuacao} < 3:
 	"Antonella Versanti": Decepcionante.

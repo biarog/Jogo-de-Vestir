@@ -4,7 +4,6 @@ Narrador: Sejam todos muito bem-vindos de volta ao seu programa favorito! Costur
 Narrador: Então, costureiros de plantão! Preparem as linhas e agulhas que o tema da segunda fase é 'Almoço de Negócios'’!!
 Narrador: Vocês têm 10 horas para completar o desafio! Boa sorte!
 Costurete: (Certo! Tenho apenas 10 horas para criar um conjunto completamente novo e incrível! Eu preciso conseguir agradar a todos os jurados!)
-# Tem que mudar isso
 set {categoria_se} = 0
 set {categoria_fc} = 0
 [end_timeline]
