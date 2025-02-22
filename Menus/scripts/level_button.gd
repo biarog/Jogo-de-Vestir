@@ -4,11 +4,7 @@ extends Button
 
 func _ready():
 	check_blocked()
-	if self.is_disabled():
-		if botao_fase:
-			pass
-		else:
-			pass
+
 
 func ir_para_fase(n_fase : int):
 	const scriptfase := preload("res://Fases/scripts/fase.gd")
@@ -39,7 +35,9 @@ func check_blocked():
 func _on_button_down():
 	if botao_fase:
 		self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Fase_Pressed.png"))
+		
 	else:
+		self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Novel_Pressed.png"))
 		pass
 
 func _on_button_up(val: int):
@@ -47,4 +45,5 @@ func _on_button_up(val: int):
 		self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Fase.png"))
 		ir_para_fase(val)
 	else:
+		self.set_button_icon(ResourceLoader.load("res://Artes/Botoes/Novel.png"))
 		ir_para_vn(val)
