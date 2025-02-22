@@ -16,7 +16,7 @@ elif {pontuacao} < 6:
 	Costurete: (Sinto as minhas mãos tremerem e minha visão fica turva em razão das lágrimas que estou tentando conter. Minha mente gira e o mundo ao meu redor parece deixar de existir.)
 	Costurete: (Como deixei isso acontecer? Eu…eu tinha certeza de que meu design era apropriado. Preciso fazer melhor!)
 elif {pontuacao} == 6:
-	"Antonella Versanti": Um design passável. As peças até que combinam. Fez um bom trabalho.”
+	"Antonella Versanti": Um design passável. As peças até que combinam. Fez um bom trabalho.
 	"João H Alazão": As cores! Os padrões! A classe de cada um dos itens é a mais pura perfeição! Nunca vi nada igual! você definitivamente tem talento para a moda!
 	"Emilia Maravilha": Uau! Que deslumbrante! Você acha que eu posso usar essa roupa em algum show meu? Combinaria tanto com meu novo álbum! Deixa, por favorzinho!
 	"Marianne Getulio": Não sei como conseguiu vencer a competição com esse talento mixuruca que você tem!! Os jurados com certeza foram enfeitiçados por algo que você falou! Não é possível que eu tenha perdido pra uma ratinha do interior como você!

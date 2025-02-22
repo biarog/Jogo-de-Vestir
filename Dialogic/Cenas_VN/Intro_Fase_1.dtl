@@ -1,7 +1,7 @@
 [style name="EstiloVn"]
 [background arg="res://Artes/background1.png" fade="0.0"]
 Narrador: Agora que todas as apresentações foram feitas, vamos começar a verdadeira diversão!
-Narrador: Jurados, por favor, sentem-se ali! Competidoras, cada uma a sua bancada! Preparem as linhas e agulhas que o tema da primeira fase é ‘tema’!!
+Narrador: Jurados, por favor, sentem-se ali! Competidoras, cada uma a sua bancada! Preparem as linhas e agulhas que o tema da primeira fase é 'Piquenique no Parque'!!
 Narrador: Vocês têm 10 horas para completar o desafio! Boa sorte!
 Costurete: (Certo! Tenho apenas 10 horas para criar um conjunto completamente novo e incrível! Eu preciso conseguir agradar a todos os jurados!)
 set {categoria_se} = 0
