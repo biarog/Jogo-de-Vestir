@@ -8,4 +8,7 @@ func _on_botao_inicio_pressed():
 		saveData.unlock_lvl(0)
 		Dialogic.start("Intro_Passado")
 	
-	get_tree().change_scene_to_file("res://Menus/cenas/selecionar_tipo_corpo.tscn")
+	if not saveData.player_modified:
+		get_tree().change_scene_to_file("res://Menus/cenas/selecionar_tipo_corpo.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Menus/cenas/level_select_screen.tscn")
