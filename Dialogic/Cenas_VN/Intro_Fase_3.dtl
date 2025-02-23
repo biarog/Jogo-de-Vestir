@@ -4,6 +4,24 @@ Narrador: Sejam todos muito bem-vindos de volta ao seu programa favorito! Costur
 Narrador: Então, costureiros de plantão! Preparem as linhas e agulhas que o tema da terceira fase é 'Show da Chapéu Roma''!!
 Narrador: Vocês têm 10 horas para completar o desafio! Boa sorte!
 Costurete: (Certo! Tenho apenas 10 horas para criar um conjunto completamente novo e incrível! Eu preciso conseguir agradar a todos os jurados!)
+Costurete: (Eu preciso de algo para usar em um show! Talvez algo com bastante brilho? Plumas? Uma saia esvoaçante? Acho que um corte inovador seria perfeito!)
+Costurete: (Preciso de algumas fitas e laços e minha tesoura! Mas… onde está a minha tesoura? Eu tenho certeza de que ela estava aqui!)
+Costurete: (Será que deixei cair em algum lugar? Talvez esteja em alguma gaveta… Ou… Pode ser que alguém tenha pegado! Tenho certeza que Marianne seria capaz de um joguinho sujo como esse!)
+# Aqui tem q colocar pontossss
+- (Não, talvez eu só a tenha perdido em meio a essa bagunça! Vou procurar um pouco mais!)
+	Costurete: (Tudo bem, não vou perder meu tempo com isso, é mais fácil pedir outra tesoura à produção!)
+- (Eu sei que foi aquela pestinha da Marianne! Ah, ela vai se ver comigo!)
+	Costurete: (Caminho rapidamente até a bancada de Marianne, ela tem seus olhos focados no tecido prateado em suas mãos.)
+	Costurete: Ei! Você! Devolva as minhas tesouras! Eu sei que foi você quem pegou! Tudo isso só pra me sabotar!
+	Costurete: (Minha raiva podia ser sentida por todo o estúdio, Marianne torce o nariz para as minhas palavras e larga o que estava fazendo.)
+	"Marianne Getulio": E quem você pensa que é? Onde estão as suas provas de que eu te sabotei? Sabia que não é muito legal sair acusando falsamente os outros por aí?
+	Costurete: Eu não preciso de provas! Eu sei que foi você! Quem mais teria o caráter tão sujo além de você?
+	"Marianne Getulio": Eu não peguei as suas tesouras! Será que você pode me deixar em paz? Eu estou tentando vencer a competição!
+	Costurete: (Marianne sempre tinha esse tom frio na voz, o que, nesse momento, só me fez ficar mais frustrada. Ah, mas isso não vai ficar assim!)
+	Costurete: (Saio de perto dela, pensando no que posso fazer para me vingar!)\
+(Bom, se ela me sabotou, acho que nada mais justo do que pagar na mesma moeda!)
+	Costurete: (Quando Marianne não está olhando, rapidamente vou até os seus materiais e abro um pote de tinta de tecido sobre o trabalho dela. Acho que isso deve ser o suficiente!)
+	Costurete: (Agora preciso voltar à minha bancada e começar o meu trabalho!)
 set {categoria_se} = 1
 set {categoria_fc} = 1
 [end_timeline]
