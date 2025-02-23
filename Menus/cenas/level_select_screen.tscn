@@ -370,8 +370,8 @@ theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
 theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
-text = "Intro dos
-Persona"
+text = "Primeira
+Escolha"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -392,7 +392,7 @@ theme_override_colors/font_color = Color(0.941176, 0.462745, 0.768627, 1)
 theme_override_colors/font_outline_color = Color(0.376471, 0, 0.25098, 1)
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
-text = "Novel 3"
+text = "novel 2"
 horizontal_alignment = 1
 
 [node name="Fase2Label" type="Label" parent="MarginContainer/VBoxContainer/Labels"]

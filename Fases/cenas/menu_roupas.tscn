@@ -101,7 +101,7 @@ layout_mode = 2
 size_flags_vertical = 4
 text = "Sapatos"
 
-[node name="Botao_cor" type="Button" parent="Fundo/Selecoes"]
+[node name="Botao_pele" type="Button" parent="Fundo/Selecoes"]
 layout_mode = 2
 size_flags_vertical = 4
 text = "Pele"
@@ -314,7 +314,7 @@ layout_mode = 2
 icon = ExtResource("19_cqp3b")
 expand_icon = true
 
-[node name="Cores" type="GridContainer" parent="Fundo"]
+[node name="Peles" type="GridContainer" parent="Fundo"]
 visible = false
 layout_mode = 0
 offset_left = 148.0
@@ -326,55 +326,55 @@ theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 3
 
-[node name="0" type="Button" parent="Fundo/Cores"]
+[node name="0" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("24_emge6")
 icon_alignment = 1
 expand_icon = true
 
-[node name="1" type="Button" parent="Fundo/Cores"]
+[node name="1" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("25_b64kl")
 icon_alignment = 1
 expand_icon = true
 
-[node name="2" type="Button" parent="Fundo/Cores"]
+[node name="2" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("26_12hub")
 icon_alignment = 1
 expand_icon = true
 
-[node name="3" type="Button" parent="Fundo/Cores"]
+[node name="3" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("27_ymlbu")
 icon_alignment = 1
 expand_icon = true
 
-[node name="4" type="Button" parent="Fundo/Cores"]
+[node name="4" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("28_8sa74")
 icon_alignment = 1
 expand_icon = true
 
-[node name="5" type="Button" parent="Fundo/Cores"]
+[node name="5" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("29_cg55g")
 expand_icon = true
 
-[node name="6" type="Button" parent="Fundo/Cores"]
+[node name="6" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("30_x6chn")
 icon_alignment = 1
 expand_icon = true
 
-[node name="7" type="Button" parent="Fundo/Cores"]
+[node name="7" type="Button" parent="Fundo/Peles"]
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 icon = ExtResource("31_eqrke")
@@ -386,7 +386,7 @@ expand_icon = true
 [connection signal="pressed" from="Fundo/Selecoes/Botao_top" to="." method="escolha_menu" binds= ["Tops"]]
 [connection signal="pressed" from="Fundo/Selecoes/Botao_bottom" to="." method="escolha_menu" binds= ["Bottoms"]]
 [connection signal="pressed" from="Fundo/Selecoes/Botao_sapato" to="." method="escolha_menu" binds= ["Sapatos"]]
-[connection signal="pressed" from="Fundo/Selecoes/Botao_cor" to="." method="escolha_menu" binds= ["Cores"]]
+[connection signal="pressed" from="Fundo/Selecoes/Botao_pele" to="." method="escolha_menu" binds= ["Peles"]]
 [connection signal="pressed" from="Fundo/Cabelos/Cabelo1" to="." method="escolha_cabelo" binds= [0]]
 [connection signal="pressed" from="Fundo/Cabelos/Cabelo2" to="." method="escolha_cabelo" binds= [1]]
 [connection signal="pressed" from="Fundo/Cabelos/Cabelo3" to="." method="escolha_cabelo" binds= [2]]
@@ -409,11 +409,11 @@ expand_icon = true
 [connection signal="pressed" from="Fundo/Sapatos/Sap_SC" to="." method="escolha_sapato" binds= [1]]
 [connection signal="pressed" from="Fundo/Sapatos/Sap_EF" to="." method="escolha_sapato" binds= [2]]
 [connection signal="pressed" from="Fundo/Sapatos/Sap_EC" to="." method="escolha_sapato" binds= [3]]
-[connection signal="pressed" from="Fundo/Cores/0" to="." method="escolha_cor" binds= [0]]
-[connection signal="pressed" from="Fundo/Cores/1" to="." method="escolha_cor" binds= [1]]
-[connection signal="pressed" from="Fundo/Cores/2" to="." method="escolha_cor" binds= [2]]
-[connection signal="pressed" from="Fundo/Cores/3" to="." method="escolha_cor" binds= [3]]
-[connection signal="pressed" from="Fundo/Cores/4" to="." method="escolha_cor" binds= [4]]
-[connection signal="pressed" from="Fundo/Cores/5" to="." method="escolha_cor" binds= [5]]
-[connection signal="pressed" from="Fundo/Cores/6" to="." method="escolha_cor" binds= [6]]
-[connection signal="pressed" from="Fundo/Cores/7" to="." method="escolha_cor" binds= [7]]
+[connection signal="pressed" from="Fundo/Peles/0" to="." method="escolha_pele" binds= [0]]
+[connection signal="pressed" from="Fundo/Peles/1" to="." method="escolha_pele" binds= [1]]
+[connection signal="pressed" from="Fundo/Peles/2" to="." method="escolha_pele" binds= [2]]
+[connection signal="pressed" from="Fundo/Peles/3" to="." method="escolha_pele" binds= [3]]
+[connection signal="pressed" from="Fundo/Peles/4" to="." method="escolha_pele" binds= [4]]
+[connection signal="pressed" from="Fundo/Peles/5" to="." method="escolha_pele" binds= [5]]
+[connection signal="pressed" from="Fundo/Peles/6" to="." method="escolha_pele" binds= [6]]
+[connection signal="pressed" from="Fundo/Peles/7" to="." method="escolha_pele" binds= [7]]

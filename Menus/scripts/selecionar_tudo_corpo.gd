@@ -18,7 +18,7 @@ func _ready() -> void:
 	player.set_bottom(playerData.get_bottom())
 	player.set_sapato(playerData.get_sapato()) 
 	player.set_olho(playerData.get_olho()) 
-	player.set_pele(playerData.get_cor()) 
+	player.set_pele(playerData.get_pele()) 
 
 func _on_menu_roupas_valor_atualizado(val:int) -> void:
 	match(val):
@@ -33,15 +33,17 @@ func _on_menu_roupas_valor_atualizado(val:int) -> void:
 		4:
 			player.set_sapato(menu_roupas.val_sapato)
 		5:
-			player.set_pele(menu_roupas.val_cor)
+			player.set_pele(menu_roupas.val_pele)
 
 func _on_concluido_pressed() -> void:
-	playerData.set_cor(player.get_pele())
+	playerData.set_pele(player.get_pele())
 	playerData.set_cabelo(player.get_cabelo())
 	playerData.set_olho(player.get_olho())
 	playerData.set_top(player.get_top())
 	playerData.set_bottom(player.get_bottom())
 	playerData.set_sapato(player.get_sapato())
-	var saveData = load("res://Save/save_data.gd")
-	saveData.player_foi_customizado()
+	
+	var progData = load("res://Save/progress_data.gd")
+	progData.player_foi_customizado()
+	
 	get_tree().change_scene_to_file('res://Menus/cenas/level_select_screen.tscn')

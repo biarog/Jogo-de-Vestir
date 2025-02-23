@@ -16,7 +16,7 @@ func _ready():
 		player = $Corpo_2
 		$Corpo_1.hide()
 	
-	player.set_pele(playerData.get_cor())
+	player.set_pele(playerData.get_pele())
 	player.set_cabelo(playerData.get_cabelo())
 
 func sistema_avaliacao_roupas():
@@ -92,11 +92,11 @@ func _on_menu_roupas_valor_atualizado(val:int) -> void:
 		4:
 			player.set_sapato(menu_roupas.val_sapato)
 		5:
-			player.set_pele(menu_roupas.val_cor)
+			player.set_pele(menu_roupas.val_pele)
 
 func desbloquear_prox():
-	var saveData = preload("res://Save/save_data.gd")
-	saveData.unlock_lvl(n_fase)
+	var progData = preload("res://Save/progress_data.gd")
+	progData.unlock_lvl(n_fase)
 
 static func set_outro(nome : String):
 	nome_tl_fim = nome

@@ -7,14 +7,14 @@ extends Node2D
 @export var val_top := 0
 @export var val_bottom := 0
 @export var val_sapato := 0
-@export var val_cor := 0
+@export var val_pele := 0
 
 signal valor_atualizado(val:int) 
 
 
 func _ready(): 
 	if !flag:
-		$Fundo/Selecoes/Botao_cor.hide()
+		$Fundo/Selecoes/Botao_pele.hide()
 	hide_all_selections()
 
 func hide_all_selections():
@@ -23,7 +23,7 @@ func hide_all_selections():
 	$Fundo/Tops.hide()
 	$Fundo/Bottoms.hide()
 	$Fundo/Sapatos.hide()
-	$Fundo/Cores.hide()
+	$Fundo/Peles.hide()
 	
 func escolha_menu(nome:String):
 	hide_all_selections()
@@ -51,6 +51,6 @@ func escolha_sapato(val: int):
 	self.val_sapato = val
 	valor_atualizado.emit(4)
 	
-func escolha_cor(val: int):
-	self.val_cor = val
+func escolha_pele(val: int):
+	self.val_pele = val
 	valor_atualizado.emit(5)
