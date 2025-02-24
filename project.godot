@@ -30,6 +30,7 @@ directories/dch_directory={
 "Gabriela Martins": "res://Dialogic/Personagens/Gabriela Martins.dch",
 "João H Alazão": "res://Dialogic/Personagens/João H Alazão.dch",
 "Marianne Getulio": "res://Dialogic/Personagens/Marianne Getulio.dch",
+"NPC": "res://Dialogic/Cenas_VN/NPC.dch",
 "Narrador": "res://Dialogic/Personagens/Narrador.dch"
 }
 directories/dtl_directory={
@@ -51,7 +52,12 @@ layout/default_style="res://Cenas_VN/EstiloVn.tres"
 variables={
 "categoria_fc": 0,
 "categoria_se": 0,
-"pontuacao": 0
+"escolha_1": 0,
+"escolha_2": 0,
+"escolha_3": 0,
+"pontuacao": 0,
+"rever_e2": false,
+"soma_escolhas": 0
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01

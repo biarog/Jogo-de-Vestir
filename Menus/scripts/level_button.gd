@@ -9,7 +9,7 @@ func ir_para_fase(n_fase : int):
 	const scriptfase := preload("res://Fases/scripts/fase.gd")
 	var nome_intro = "Intro_Fase_" + str(n_fase)
 	var nome_fim = "Fim_Fase_" + str(n_fase)
-	
+	Dialogic.VAR.rever_e2 = false
 	scriptfase.set_outro(nome_fim)
 	scriptfase.set_n_fase(n_fase)
 	Dialogic.start(nome_intro)
@@ -20,8 +20,17 @@ func ir_para_vn(n_vn : int):
 		1:
 			Dialogic.start("Intro_Passado")
 		2:
+			var progData = preload("res://Save/progress_data.gd")
+			progData.unlock_lvl(0)
+			get_node(^"../Fase1Button").check_blocked()
 			Dialogic.start("Intro_Personagens")
-		6:
+		3:
+			Dialogic.VAR.rever_e2 = true
+			Dialogic.start("Fim_Fase_2")
+		4:
+			Dialogic.start("Intro_Fase_3")
+		5:
+			Dialogic.VAR.soma_escolhas = Dialogic.VAR.escolha_1 + Dialogic.VAR.escolha_2 + Dialogic.VAR.escolha_3 
 			Dialogic.start("Epilogo")
 
 func check_blocked():

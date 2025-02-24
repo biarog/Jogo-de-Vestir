@@ -7,7 +7,7 @@ func _on_botao_inicio_pressed():
 	
 	if not progData.progresso_novels[0]:
 		progData.unlock_vn(0)
-		progData.unlock_lvl(0)
+		progData.unlock_vn(1)
 		Dialogic.start("Intro_Passado")
 	
 	if not progData.player_modified:

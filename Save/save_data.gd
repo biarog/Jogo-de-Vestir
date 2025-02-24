@@ -23,7 +23,10 @@ func save_data() :
 				"olho" : player.get_olho(),
 				"top" : player.get_top(),
 				"bottom" : player.get_bottom(),
-				"sapato" : player.get_sapato()
+				"sapato" : player.get_sapato(),
+				"escolha_1" : player.get_esc_1(),
+				"escolha_2" : player.get_esc_2(),
+				"escolha_3" : player.get_esc_3()
 			}
 	}
 	
@@ -53,3 +56,27 @@ func load_data() :
 		player.set_top(data.player.top)
 		player.set_bottom(data.player.bottom)
 		player.set_sapato(data.player.sapato)
+		
+		player.set_esc_1(data.player.escolha_1)
+		player.set_esc_2(data.player.escolha_2)
+		player.set_esc_3(data.player.escolha_3)
+		
+	else :
+		progresso.progresso_niveis = [false, false, false, false]
+		progresso.progresso_novels = [false, false, false, false, false]
+		progresso.player_modified = false
+		
+		player.set_corpo(0)
+		player.set_pele(0)
+		player.set_olho(0)
+		player.set_cabelo(0)
+		player.set_top(0)
+		player.set_bottom(0)
+		player.set_sapato(0)
+		
+		player.set_esc_1(0)
+		player.set_esc_2(0)
+		player.set_esc_3(0)
+
+func delete_data():
+	DirAccess.remove_absolute(SAVE_GAME_PATH)

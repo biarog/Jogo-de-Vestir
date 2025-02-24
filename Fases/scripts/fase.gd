@@ -16,6 +16,10 @@ func _ready():
 		player = $Corpo_2
 		$Corpo_1.hide()
 	
+	player.hide_top()
+	player.hide_bottom()
+	player.hide_sapato()
+	
 	player.set_pele(playerData.get_pele())
 	player.set_cabelo(playerData.get_cabelo())
 
@@ -87,16 +91,28 @@ func _on_menu_roupas_valor_atualizado(val:int) -> void:
 			player.set_olho(menu_roupas.val_olho)
 		2:
 			player.set_top(menu_roupas.val_top)
+			player.show_top()
 		3:
 			player.set_bottom(menu_roupas.val_bottom)
+			player.show_bottom()
 		4:
 			player.set_sapato(menu_roupas.val_sapato)
+			player.show_sapato()
 		5:
 			player.set_pele(menu_roupas.val_pele)
 
 func desbloquear_prox():
 	var progData = preload("res://Save/progress_data.gd")
-	progData.unlock_lvl(n_fase)
+	if n_fase != 4:
+		progData.unlock_lvl(n_fase)
+	
+	match n_fase:
+		2:
+			progData.unlock_vn(2)
+		3:
+			progData.unlock_vn(3)
+		4:
+			progData.unlock_vn(4)
 
 static func set_outro(nome : String):
 	nome_tl_fim = nome

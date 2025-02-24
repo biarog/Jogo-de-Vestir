@@ -9,6 +9,25 @@ static var top: int = 0
 static var bottom: int = 0
 static var cabelo: int = 0
 
+static func get_esc_1():
+	return Dialogic.VAR.escolha_1
+
+static func set_esc_1(valor: int) -> void:
+	Dialogic.VAR.escolha_1 = valor
+
+static func get_esc_2():
+	return Dialogic.VAR.escolha_2
+
+static func set_esc_2(valor: int) -> void:
+	Dialogic.VAR.escolha_2 = valor
+
+static func get_esc_3():
+	return Dialogic.VAR.escolha_3
+
+static func set_esc_3(valor: int) -> void:
+	Dialogic.VAR.escolha_3 = valor
+
+
 static func get_corpo() -> int:
 	return corpo
 

@@ -1,18 +1,16 @@
 [style name="EstiloVn"]
 [background arg="res://Artes/background1.png" fade="0.0"]
 Costurete: (Não acredito que já se passou tanto tempo desde que participei de Costurando Sonhos!)
-# Colocar a pontuação
-# Final bom
-if {} == "":
-	Costurete: (Depois de vencer o programa, as propostas de empregos para atuar como estilista para grandes marcas não pararam de chegar! Eu finalmente havia vencido na vida!)
+Costurete: (Depois de vencer o programa, as propostas de empregos para atuar como estilista para grandes marcas não pararam de chegar! Eu finalmente havia vencido na vida!)
+if {soma_escolhas} >= 3:
+	# Final bom
 	Costurete: (Mesmo com todas as ofertas dos mais variados tipos, eu escolhi começar a minha própria marca! Os investidores choveram assim que anunciei minha escolha e, agora, mesmo com poucos anos desde que fundei minha marca de roupas, os negócios vão bem!)
 	Costurete: Tenho altas expectativas para o futuro e, agora que tudo está se expandindo, eu precisava conseguir as melhores estilistas para continuar atingindo meus objetivos! E é aí que vocês entram!
 	Costurete: (Olho para Gabriela e Marianne à minha frente. O tempo fez bem a todas nós. Amadurecemos e criamos nomes para nós mesmas na indústria da moda.)
 	Costurete: E então? O que vocês me dizem? Vamos trabalhar juntas?
 	Costurete: (Eu sorrio para as duas, recebendo expressões de contentamento de volta. Acho que tudo está prestes a mudar para melhor.)
-# Final ruim
-elif :
-	Costurete: (Depois de vencer o programa, as propostas de empregos para atuar como estilista para grandes marcas não pararam de chegar! Eu finalmente havia vencido na vida!)
+elif {soma_escolhas} < 3:
+	# Final ruim
 	Costurete: (Mostrei para todos que duvidaram de mim que eu poderia ser o maior nome dessa indústria! Agora eu dito as regras dentro do mundo da moda!)
 	Costurete: (Tenho um trabalho de altíssimo nível em uma das marcas mais estabelecidas do país! A vida de caipira ficou para trás e eu finalmente estou aproveitando tudo que queria!)
 	Costurete: (O que estou pensando? Não tenho tempo para esse tipo de memórias sentimentais! Preciso entregar um design novo até o final da semana! Esse projeto deve ficar perfeito!)
@@ -21,4 +19,3 @@ elif :
 	Costurete: (Provo um gole do líquido escuro e amargo, mas imediatamente cuspo toda a bebida. O que é isso?)
 	Costurete: Eca!! Não tem açúcar onde você pegou essa porcaria? Você não consegue fazer uma simples tarefa corretamente? Quero falar com o RH! Quem foi que contratou uma imprestável como você?
 [end_timeline]
-

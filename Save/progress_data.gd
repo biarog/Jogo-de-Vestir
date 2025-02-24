@@ -3,7 +3,7 @@ class_name ProgressData
 
 static var saveData = SaveData.new()
 static var progresso_niveis := [false, false, false, false]
-static var progresso_novels := [false, false, false, false, false, false]
+static var progresso_novels := [false, false, false, false, false]
 static var player_modified := false
 
 static func player_foi_customizado():
@@ -20,5 +20,5 @@ static func unlock_vn(idx:int):
 
 static func block_all():
 	progresso_niveis = [false, false, false, false]
-	progresso_novels = [false, false, false, false, false, false]
+	progresso_novels = [false, false, false, false, false]
 	saveData.save_data()

@@ -1,5 +1,23 @@
 extends Node2D
 
+func hide_top():
+	$Top.hide()
+
+func hide_bottom():
+	$Bottom.hide()
+
+func hide_sapato():
+	$Sapato.hide()
+
+func show_top():
+	$Top.show()
+
+func show_bottom():
+	$Bottom.show()
+
+func show_sapato():
+	$Sapato.show()
+
 func set_cabelo(val_cabelo:int):
 	$Cabelo.frame = val_cabelo
 

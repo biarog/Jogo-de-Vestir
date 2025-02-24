@@ -12,12 +12,12 @@ Costurete: Já terminei meu conjunto! Você parecia meio perturbada, então vim 
 Costurete: (Ela hesita um pouco ao falar, consigo perceber que está nervosa.)
 "Gabriela Martins": Eu não estou conseguindo criar nada adequado. Não tenho nenhuma inspiração e o tempo só está passando!
 Costurete: (Ah, problemas criativos. Será que eu devo tentar ajudar? Mas ela é minha concorrente, acho que seria muito arriscado! O que devo fazer agora?)
-# Precisa pontuar
 - (O que eu estou pensando? Isso é uma competição! Eu não deveria ajudá-la!)
 	Costurete: Você nem consegue criar um conjunto decente para esse tipo de tema? O que você veio fazer nessa competição, então?
 	Costurete: Parece que vencer vai ser mais fácil do que pensei, minhas concorrentes são de uma categoria tão inferior à minha.
 	Costurete: (Assim que termino de falar, viro-me para voltar ao meu lugar, nem me dou ao trabalho de ver a expressão que Gabriela fez após ouvir minhas palavras.)
 	(Não vim até aqui para ser boazinha com outras competidoras! Meu foco é vencer!)
+	set {escolha_2} = -1
 - (Que bobeira que estou pensando? Gabriela é tão gentil, não faz mal ajudá-la um pouco!)
 	Costurete: (Tenho certeza que ela faria o mesmo por mim, se eu precisasse!)
 	Costurete: Sabe o que me ajuda quando não tenho inspirações? Pensar que estou vestindo uma pessoa famosa que eu admiro muito!
@@ -26,27 +26,30 @@ Costurete: (Ah, problemas criativos. Será que eu devo tentar ajudar? Mas ela é
 	"Gabriela Martins": Ah! Talvez… Maril Estribe! Eu gostei muito dela em Lúcifer veste Bucci! Uma mistura do clássico de alfaiataria com um toque moderno! Acho que sei o que fazer!
 	"Gabriela Martins": Obrigada, Costurete!
 	Costurete: (Eu sorrio com o agradecimento, sinto-me realizada de ter conseguido ajudar Gabriela. Volto ao meu lugar com uma sensação de dever cumprido!)
+	set {escolha_2} = 1
 Costurete: (O tempo finalmente terminou! Agora já é hora das notas e feedbacks!)
-Costurete: (Olho receosa entre os jurados, minhas mãos fortemente entrelaçadas à frente de meu corpo. Torço para que eles me avaliem bem!)
-if {pontuacao} < 3:
-	"Antonella Versanti": Decepcionante.
-	"João H Alazão": Não era exatamente isso que eu estava esperando desse tema. Mas você vai ter outras chances de se redimir!
-	"Emilia Maravilha": É…não é nada deslumbrante!
-	"Marianne Getulio": Você realmente pensou que com esse nível de design - se é que essa porcaria que você fez pode ser chamada de design - você poderia vencer? Essa competição não é pra meros amadores como você, Costurete!
-	Costurete: (Sinto as minhas mãos tremerem e minha visão fica turva em razão das lágrimas que estou tentando conter. Minha mente gira e o mundo ao meu redor parece deixar de existir.)
-	Costurete: (Como deixei isso acontecer? Eu…eu tinha certeza de que meu design era apropriado. Preciso fazer melhor!)
-elif {pontuacao} < 6:
-	"Antonella Versanti": Não sei bem se você entendeu o tema completamente.
-	"João H Alazão": Esse é um ótimo início! Um pouco mais de prática e você será um grande nome na indústria!
-	"Emilia Maravilha": Acho que ficou legal? Talvez um pouco mais de brilho?
-	"Marianne Getulio": Você realmente pensou que com esse nível de design - se é que essa porcaria que você fez pode ser chamada de design - você poderia vencer? Essa competição não é pra meros amadores como você, Costurete!
-	Costurete: (Sinto as minhas mãos tremerem e minha visão fica turva em razão das lágrimas que estou tentando conter. Minha mente gira e o mundo ao meu redor parece deixar de existir.)
-	Costurete: (Como deixei isso acontecer? Eu…eu tinha certeza de que meu design era apropriado. Preciso fazer melhor!)
-elif {pontuacao} == 6:
-	"Antonella Versanti": Um design passável. As peças até que combinam. Fez um bom trabalho.
-	"João H Alazão": As cores! Os padrões! A classe de cada um dos itens é a mais pura perfeição! Nunca vi nada igual! você definitivamente tem talento para a moda!
-	"Emilia Maravilha": Uau! Que deslumbrante! Você acha que eu posso usar essa roupa em algum show meu? Combinaria tanto com meu novo álbum! Deixa, por favorzinho!
-	"Marianne Getulio": Não fique se achando só porque conseguiu vencer por alguns pontinhos! A próxima fase será minha vitória, do jeito que deve ser.
-	Costurete: (Meu coração parecia que ia sair pela boca, eu não conseguia conter toda a animação fervilhando dentro de meu corpo.)
-	Costurete: (Isso é simplesmente um sonho! Eu venci a segunda fase da competição!)
+if {rever_e2} == false:
+	Costurete: (Olho receosa entre os jurados, minhas mãos fortemente entrelaçadas à frente de meu corpo. Torço para que eles me avaliem bem!)
+	if {pontuacao} < 3:
+		"Antonella Versanti": Decepcionante.
+		"João H Alazão": Não era exatamente isso que eu estava esperando desse tema. Mas você vai ter outras chances de se redimir!
+		"Emilia Maravilha": É…não é nada deslumbrante!
+		"Marianne Getulio": Você realmente pensou que com esse nível de design - se é que essa porcaria que você fez pode ser chamada de design - você poderia vencer? Essa competição não é pra meros amadores como você, Costurete!
+		Costurete: (Sinto as minhas mãos tremerem e minha visão fica turva em razão das lágrimas que estou tentando conter. Minha mente gira e o mundo ao meu redor parece deixar de existir.)
+		Costurete: (Como deixei isso acontecer? Eu…eu tinha certeza de que meu design era apropriado. Preciso fazer melhor!)
+	elif {pontuacao} < 6:
+		"Antonella Versanti": Não sei bem se você entendeu o tema completamente.
+		"João H Alazão": Esse é um ótimo início! Um pouco mais de prática e você será um grande nome na indústria!
+		"Emilia Maravilha": Acho que ficou legal? Talvez um pouco mais de brilho?
+		"Marianne Getulio": Você realmente pensou que com esse nível de design - se é que essa porcaria que você fez pode ser chamada de design - você poderia vencer? Essa competição não é pra meros amadores como você, Costurete!
+		Costurete: (Sinto as minhas mãos tremerem e minha visão fica turva em razão das lágrimas que estou tentando conter. Minha mente gira e o mundo ao meu redor parece deixar de existir.)
+		Costurete: (Como deixei isso acontecer? Eu…eu tinha certeza de que meu design era apropriado. Preciso fazer melhor!)
+	elif {pontuacao} == 6:
+		"Antonella Versanti": Um design passável. As peças até que combinam. Fez um bom trabalho.
+		"João H Alazão": As cores! Os padrões! A classe de cada um dos itens é a mais pura perfeição! Nunca vi nada igual! você definitivamente tem talento para a moda!
+		"Emilia Maravilha": Uau! Que deslumbrante! Você acha que eu posso usar essa roupa em algum show meu? Combinaria tanto com meu novo álbum! Deixa, por favorzinho!
+		"Marianne Getulio": Não fique se achando só porque conseguiu vencer por alguns pontinhos! A próxima fase será minha vitória, do jeito que deve ser.
+		Costurete: (Meu coração parecia que ia sair pela boca, eu não conseguia conter toda a animação fervilhando dentro de meu corpo.)
+		Costurete: (Isso é simplesmente um sonho! Eu venci a segunda fase da competição!)
+
 [end_timeline]
