@@ -4,6 +4,7 @@ Costurete: (Assim que terminei de montar meu look, minha visão capturou Gabriel
 Costurete: (Gabriela tinha tecidos coloridos e estampados ao seu redor, sua bancada criava um completo caos, mas seu manequim estava vazio.)
 Costurete: (Observando um pouco mais, eu conseguia ver um semblante cheio de preocupação e confusão. Acho que eu deveria ver o que está acontecendo, meu trabalho já está feito, de qualquer forma.)
 Costurete: (Ando até Gabriela, mas ela parece tão perdida em seus pensamentos que nem nota minha presença.)
+join "Gabriela Martins" center
 Costurete: Gabriela? O que houve?
 Costurete: (A garota de cabelos cor de rosa dá um pulo antes de se virar para falar comigo.)
 "Gabriela Martins": O-oi, Costurete! O que está fazendo aqui?
@@ -30,6 +31,9 @@ Costurete: (Ah, problemas criativos. Será que eu devo tentar ajudar? Mas ela é
 Costurete: (O tempo finalmente terminou! Agora já é hora das notas e feedbacks!)
 if {rever_e2} == false:
 	Costurete: (Olho receosa entre os jurados, minhas mãos fortemente entrelaçadas à frente de meu corpo. Torço para que eles me avaliem bem!)
+	join "Antonella Versanti" leftmost
+	join "João H Alazão" center
+	join "Emilia Maravilha" rightmost
 	if {pontuacao} < 3:
 		"Antonella Versanti": Decepcionante.
 		"João H Alazão": Não era exatamente isso que eu estava esperando desse tema. Mas você vai ter outras chances de se redimir!

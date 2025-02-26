@@ -1,3 +1,11 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
 config_version=5
 
 [application]
@@ -22,7 +30,6 @@ directories/dch_directory={
 "Gabriela Martins": "res://Dialogic/Personagens/Gabriela Martins.dch",
 "João H Alazão": "res://Dialogic/Personagens/João H Alazão.dch",
 "Marianne Getulio": "res://Dialogic/Personagens/Marianne Getulio.dch",
-"NPC": "res://Dialogic/Cenas_VN/NPC.dch",
 "Narrador": "res://Dialogic/Personagens/Narrador.dch"
 }
 directories/dtl_directory={

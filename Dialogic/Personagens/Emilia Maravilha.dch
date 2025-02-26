@@ -8,12 +8,22 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "Emilia Default",
 "description": "",
 "display_name": "Emília Maravilha",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"Emilia Default": {
+"export_overrides": {
+"image": "\"res://Artes/Personagens/Emilia/Emilia Maravilha.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

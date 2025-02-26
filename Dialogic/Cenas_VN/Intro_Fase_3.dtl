@@ -12,6 +12,7 @@ Costurete: (Será que deixei cair em algum lugar? Talvez esteja em alguma gaveta
 	set {escolha_3} = 1
 - (Eu sei que foi aquela pestinha da Marianne! Ah, ela vai se ver comigo!)
 	Costurete: (Caminho rapidamente até a bancada de Marianne, ela tem seus olhos focados no tecido prateado em suas mãos.)
+	join "Marianne Getulio" center
 	Costurete: Ei! Você! Devolva as minhas tesouras! Eu sei que foi você quem pegou! Tudo isso só pra me sabotar!
 	Costurete: (Minha raiva podia ser sentida por todo o estúdio, Marianne torce o nariz para as minhas palavras e larga o que estava fazendo.)
 	"Marianne Getulio": E quem você pensa que é? Onde estão as suas provas de que eu te sabotei? Sabia que não é muito legal sair acusando falsamente os outros por aí?

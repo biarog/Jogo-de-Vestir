@@ -6,6 +6,8 @@ if {soma_escolhas} >= 3:
 	# Final bom
 	Costurete: (Mesmo com todas as ofertas dos mais variados tipos, eu escolhi começar a minha própria marca! Os investidores choveram assim que anunciei minha escolha e, agora, mesmo com poucos anos desde que fundei minha marca de roupas, os negócios vão bem!)
 	Costurete: Tenho altas expectativas para o futuro e, agora que tudo está se expandindo, eu precisava conseguir as melhores estilistas para continuar atingindo meus objetivos! E é aí que vocês entram!
+	join "Gabriela Martins" left
+	join "Marianne Getulio" right
 	Costurete: (Olho para Gabriela e Marianne à minha frente. O tempo fez bem a todas nós. Amadurecemos e criamos nomes para nós mesmas na indústria da moda.)
 	Costurete: E então? O que vocês me dizem? Vamos trabalhar juntas?
 	Costurete: (Eu sorrio para as duas, recebendo expressões de contentamento de volta. Acho que tudo está prestes a mudar para melhor.)

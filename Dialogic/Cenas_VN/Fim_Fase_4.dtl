@@ -1,6 +1,9 @@
 [background arg="res://Artes/background1.png" fade="0.0"]
 Costurete: (Acho que a minha roupa combinou muito com o tema! Ficou exatamente do jeitinho que eu queria! Vou arrasar!)
 Costurete: (Olho receosa entre os jurados, minhas mãos fortemente entrelaçadas à frente de meu corpo. Torço para que eles me avaliem bem!)
+join "Antonella Versanti" leftmost
+join "João H Alazão" center
+join "Emilia Maravilha" rightmost
 if {pontuacao} < 3:
 	"Antonella Versanti": Decepcionante.
 	"João H Alazão": Não era exatamente isso que eu estava esperando desse tema. Mas você vai ter outras chances de se redimir!

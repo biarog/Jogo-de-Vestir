@@ -7,18 +7,24 @@ Narrador: As notas dadas por nossos incríveis jurados podem variar de acordo co
 Narrador: Nossa vencedora será decidida após todas as fases serem concluídas! Espero que todas deem o melhor de si para agradar aos grandes nomes da indústria. A melhor concorrente receberá oportunidades exclusivas no mundo da moda e a chance de alavancar a carreira de designer!
 Narrador: Agora, vamos ver quem são os ilustres jurados dessa temporada de Costurando Sonhos!
 Narrador: Nossa primeira jurada é Antonella Versanti! Uma das mais jovens a se consagrar como designer chefe da Bucci!
+join "Antonella Versanti" leftmost
 "Antonella Versanti": (Ela apenas assente com a cabeça, cumprimentando o público.)
 Narrador: Nosso segundo jurado é o mais querido chefe de produção da Oui-Oui vitton! Apresento a vocês João Humberto Alazão!
+join "João H Alazão" center
 "João H Alazão": Opa! Estou muito honrado de ter sido escolhido como um dos jurados dessa temporada de Costurando Sonhos! Espero que possamos nos divertir muito juntos!
 Narrador: Por fim, a jurada surpresa da temporada é ela, o nome mais quente na indústria musical! Emilia Maravilha!
+join "Emilia Maravilha" rightmost
 "Emilia Maravilha": Oi, pessoal!! Sentiram a minha falta? Hihi! Sou eu mesma!! Emilia Maravilha!!!
 Costurete: (Uau! Eu nunca imaginei que um dia estaria vivendo isso! É tudo tão mágico e diferente de ver pela televisão!)
 Narrador: Muito bem, queridos costureiros de plantão! Antes de iniciarmos a primeira fase, vamos conhecer as nossas estrelas do show! As nossas competidoras!
 Narrador: As três escolhidas da temporada são Gabriela Martins, Marianne Getúlio e Costurete!! Sejam todas muito bem-vindas ao nosso programa!
+leave --All--
 # Aqui a gente vai pra um flashback das competidoras se conhecendo
 Costurete: (Estou tão nervosa para a competição, mal posso esperar para conhecer minhas concorrentes.)
 Costurete: (As portas do elevador se abrem e duas outras garotas entram.)
+join "Gabriela Martins" left
 Costurete: (Uma delas sorri para mim, os olhos azuis se curvando em meias luas.)
+join "Marianne Getulio" right
 Costurete: (A outra garota tem uma expressão que não consigo decifrar, mas um arrepio desce por minha espinha quando nossos olhos se encontram.)
 "Gabriela Martins": O-oi! Prazer em conhecer vocês duas, eu sou a Gabriela! Espero que nos demos bem durante o programa!
 Costurete: (Eu sorrio levemente com a apresentação, suspirando aliviada que pelo menos uma das concorrentes parece ser amigável.)
