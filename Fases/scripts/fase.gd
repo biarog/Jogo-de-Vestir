@@ -20,8 +20,11 @@ func _ready():
 	player.hide_bottom()
 	player.hide_sapato()
 	
+	$Enviar_resultado.disabled = true
+	
 	player.set_pele(playerData.get_pele())
 	player.set_cabelo(playerData.get_cabelo())
+	player.set_olho(playerData.get_olho())
 
 func sistema_avaliacao_roupas():
 	# categorias:
@@ -100,6 +103,9 @@ func _on_menu_roupas_valor_atualizado(val:int) -> void:
 			player.show_sapato()
 		5:
 			player.set_pele(menu_roupas.val_pele)
+			
+	if player.is_vestida():
+		$Enviar_resultado.disabled = false
 
 func desbloquear_prox():
 	var progData = preload("res://Save/progress_data.gd")

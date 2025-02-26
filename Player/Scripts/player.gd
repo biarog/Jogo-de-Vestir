@@ -1,5 +1,10 @@
 extends Node2D
 
+func is_vestida():
+	if $Top.is_visible_in_tree() && $Bottom.is_visible_in_tree() && $Sapato.is_visible_in_tree():
+		return true
+	return false
+
 func hide_top():
 	$Top.hide()
 
