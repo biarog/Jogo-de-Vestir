@@ -13,7 +13,7 @@ config_version=5
 config/name="Costurando Sonhos"
 run/main_scene="res://Menus/cenas/tela_inicio.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Artes/icone.png"
 
 [autoload]
 
