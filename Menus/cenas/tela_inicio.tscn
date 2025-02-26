@@ -15,7 +15,7 @@ position = Vector2(304, 142)
 scale = Vector2(2.08341, 2.08341)
 script = ExtResource("1_d068f")
 
-[node name="WhatsAppImage2024-11-29At13_41_02" type="Sprite2D" parent="."]
+[node name="Fundo xadrez" type="Sprite2D" parent="."]
 position = Vector2(314.88, 191.011)
 rotation = -1.5707
 scale = Vector2(0.224967, 0.300006)
@@ -25,31 +25,31 @@ texture = ExtResource("1_kyy7o")
 position = Vector2(-62.8776, -11.0396)
 scale = Vector2(1.22806, 1.22806)
 
-[node name="129SemTítulo20241129133831" type="Sprite2D" parent="Node2D"]
+[node name="Fundo selo" type="Sprite2D" parent="Node2D"]
 position = Vector2(315, 172)
 rotation = 1.56573
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_87fg6")
 
-[node name="129SemTítulo20241129133907" type="Sprite2D" parent="Node2D"]
+[node name="Título" type="Sprite2D" parent="Node2D"]
 position = Vector2(318, 170)
 rotation = -1.62186
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_ngqod")
 
-[node name="129SemTítulo20241129133859" type="Sprite2D" parent="Node2D"]
+[node name="Botão início" type="Sprite2D" parent="Node2D"]
 position = Vector2(318, 173)
 rotation = -1.56778
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_idr4e")
 
-[node name="130SemTítulo20241129143343" type="Sprite2D" parent="Node2D"]
+[node name="Estrela" type="Sprite2D" parent="Node2D"]
 position = Vector2(517, 240)
 rotation = 0.211112
 scale = Vector2(0.0448568, 0.0448568)
 texture = ExtResource("5_fwbyl")
 
-[node name="130SemTítulo20241129143553" type="Sprite2D" parent="Node2D"]
+[node name="Flor" type="Sprite2D" parent="Node2D"]
 position = Vector2(121, 195)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("6_i1p1r")
