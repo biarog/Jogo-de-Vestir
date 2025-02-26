@@ -28,6 +28,7 @@ Costurete: (Ah, problemas criativos. Será que eu devo tentar ajudar? Mas ela é
 	"Gabriela Martins": Obrigada, Costurete!
 	Costurete: (Eu sorrio com o agradecimento, sinto-me realizada de ter conseguido ajudar Gabriela. Volto ao meu lugar com uma sensação de dever cumprido!)
 	set {escolha_2} = 1
+leave --All--
 Costurete: (O tempo finalmente terminou! Agora já é hora das notas e feedbacks!)
 if {rever_e2} == false:
 	Costurete: (Olho receosa entre os jurados, minhas mãos fortemente entrelaçadas à frente de meu corpo. Torço para que eles me avaliem bem!)
