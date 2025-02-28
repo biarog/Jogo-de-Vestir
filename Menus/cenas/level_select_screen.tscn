@@ -516,10 +516,15 @@ theme_override_constants/separation = 30
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Camera/Control/Menu/MarginContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 25
 
 [node name="Save" type="Button" parent="Camera/Control/Menu/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "Salvar Data"
+
+[node name="Credits" type="Button" parent="Camera/Control/Menu/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Créditos"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Camera/Control/Menu/MarginContainer/HBoxContainer"]
 layout_mode = 2
@@ -533,6 +538,87 @@ text = "Deletar Data"
 [node name="Voltar" type="Button" parent="Camera/Control/Menu/MarginContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 text = "Fechar menu"
+
+[node name="Creditos" type="PanelContainer" parent="Camera/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -262.0
+offset_right = 502.0
+offset_bottom = 423.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera/Control/Creditos"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+
+[node name="Sair" type="Button" parent="Camera/Control/Creditos/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = " X "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera/Control/Creditos/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Título" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Créditos"
+horizontal_alignment = 1
+
+[node name="Historia" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "História............................................................................................................Amanda Kouchi"
+
+[node name="Arte" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Arte....................................................................................................................Rayana Saboya"
+
+[node name="Programação" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Programação...............................................................................................Beatriz Rogers"
+
+[node name="Programação2" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Programação...............................................................................................Matteo Savan"
+
+[node name="Fonte" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fonte (Pulang).........................................................................................Khurasan"
+
+[node name="Título2" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Contatos"
+horizontal_alignment = 1
+
+[node name="Historia2" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Amanda Kouchi - github: amandakouchi  - amanda.kouchi@gmail.com"
+
+[node name="Arte2" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Rayana Saboya - github: RayanaSaboya - rayanasaboya@gmail.com"
+
+[node name="Programação3" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Beatriz Rogers - github: biarog            - beatrizrogers55@gmail.com"
+
+[node name="Programação4" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Matteo Savan - github: matteosavan    - matteosavan@gmail.com"
+
+[node name="Fonte2" type="Label" parent="Camera/Control/Creditos/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Khurasan - website: www.khurasanstudio.com"
 
 [node name="BottomDecor" type="PanelContainer" parent="Camera/Control"]
 custom_minimum_size = Vector2(0, 65)
@@ -605,7 +691,9 @@ theme_override_styles/normal = ExtResource("6_og3jp")
 [connection signal="pressed" from="Camera/Control/Title/MarginContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="Camera/Control/Title/MarginContainer/CharacterSelect" to="." method="_on_character_select_pressed"]
 [connection signal="pressed" from="Camera/Control/Menu/MarginContainer/HBoxContainer/VBoxContainer/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="Camera/Control/Menu/MarginContainer/HBoxContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Camera/Control/Menu/MarginContainer/HBoxContainer/VBoxContainer2/Delete" to="." method="_on_delete_pressed"]
 [connection signal="pressed" from="Camera/Control/Menu/MarginContainer/HBoxContainer/VBoxContainer2/Voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="Camera/Control/Creditos/MarginContainer/Sair" to="." method="_on_sair_pressed"]
 [connection signal="pressed" from="Camera/Control/GoLeft" to="." method="_on_go_left_pressed"]
 [connection signal="pressed" from="Camera/Control/GoRight" to="." method="_on_go_right_pressed"]

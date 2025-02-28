@@ -49,6 +49,7 @@ func _on_menu_button_pressed():
 
 func hide_menu():
 	$Camera/Control/Menu.hide()
+	$Camera/Control/Creditos.hide()
 
 func _on_character_select_pressed():
 	get_tree().change_scene_to_file("res://Menus/cenas/selecionar_tipo_corpo.tscn")
@@ -64,3 +65,9 @@ func _on_delete_pressed():
 	var saveData = SaveData.new()
 	saveData.delete_data()
 	get_tree().change_scene_to_file("res://Menus/cenas/tela_inicio.tscn")
+
+func _on_credits_pressed():
+	$Camera/Control/Creditos.show()
+
+func _on_sair_pressed():
+	hide_menu()
